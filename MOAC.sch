@@ -5339,7 +5339,7 @@ Source: TOP MAGNETICS CORPORATION .. tfi.pdf</description>
 <part name="C5" library="freetronics-master-v1.1" deviceset="CAP" device="0603" value="15pF"/>
 <part name="C6" library="freetronics-master-v1.1" deviceset="CAP" device="0603" value="15pF"/>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
-<part name="C4" library="freetronics-master-v1.1" deviceset="CAP" device="0603" value="1uF 0603"/>
+<part name="C4" library="freetronics-master-v1.1" deviceset="CAP" device="0603" value="1uF"/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
 <part name="XTL1" library="freetronics-jon" deviceset="CRYSTAL-GND" device="3X2" value="16MHz"/>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
