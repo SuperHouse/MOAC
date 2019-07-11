@@ -30,7 +30,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
@@ -188,7 +188,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyZDliZmNi" projecturn="a.cGVyc29uYWw6dWUyZDliZmNiIzIwMTgxMTA5MTU5MjczMjgx" f3durn="urn:adsk.wipprod:dm.lineage:ugFpkX5gRSuWYfeIfJSr2A" pcbguid="4ef23d0d-506b-4405-99bc-0b8b5e44c8a7" lastpulledtime="" lastsyncedchangeguid="5ba1ec24-89dd-44ca-24b5-193448694cc6"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyZDliZmNi" projecturn="a.cGVyc29uYWw6dWUyZDliZmNiIzIwMTgxMTA5MTU5MjczMjgx" f3durn="urn:adsk.wipprod:dm.lineage:ugFpkX5gRSuWYfeIfJSr2A" pcbguid="4ef23d0d-506b-4405-99bc-0b8b5e44c8a7" lastpulledtime="" lastsyncedchangeguid="471bc7d2-0762-5488-5c1b-afe42d69db7e"/>
 <plain>
 <wire x1="113" y1="3" x2="113" y2="37" width="0" layer="20"/>
 <wire x1="110" y1="40" x2="3" y2="40" width="0" layer="20"/>
@@ -200,14 +200,14 @@
 <wire x1="113" y1="37" x2="110" y2="40" width="0" layer="20" curve="90"/>
 <wire x1="20.862" y1="29.7" x2="20.481" y2="29.319" width="0.254" layer="22"/>
 <circle x="28.8936" y="34.1" radius="0.254" width="0.4064" layer="21"/>
-<text x="55.5" y="17" size="2.1844" layer="21" font="vector" ratio="17" align="bottom-center">www.superhouse.tv/moac</text>
-<text x="103" y="25.5" size="1.9304" layer="22" font="vector" ratio="15" rot="MR0">Arduino Leonardo Compatible</text>
+<text x="89.5" y="35.3" size="1.5" layer="21" font="vector" ratio="17" align="bottom-center">www.superhouse.tv/moac</text>
+<text x="103" y="27.5" size="1.9304" layer="22" font="vector" ratio="15" rot="MR0">Arduino Leonardo Compatible</text>
 <text x="24.638" y="10.16" size="0.6096" layer="25" rot="MR0">PIEZO</text>
 <text x="29.591" y="10.287" size="0.6096" layer="25">IC1</text>
 <text x="45.212" y="9.906" size="0.6096" layer="25">S1</text>
 <text x="44.958" y="14.224" size="0.6096" layer="25">LED1</text>
 <text x="44.958" y="4.572" size="0.6096" layer="25">LED2</text>
-<text x="1" y="8.8364" size="1.8" layer="21" font="vector" ratio="15">v1.1</text>
+<text x="1" y="8.8364" size="1.8" layer="21" font="vector" ratio="15">v2.0</text>
 <hole x="3" y="3" drill="3.2"/>
 <hole x="3" y="37" drill="3.2"/>
 <text x="103.6" y="25" size="1.2" layer="21" font="vector" ratio="15" align="center">Rx</text>
@@ -242,11 +242,11 @@
 <wire x1="105" y1="20" x2="104" y2="19" width="0.3048" layer="21" curve="90"/>
 <wire x1="104" y1="19" x2="105" y2="18" width="0.3048" layer="21" curve="90"/>
 <text x="28.5" y="37" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="bottom-center">ICSP</text>
-<text x="91" y="34.6" size="1.3" layer="21" font="vector" ratio="17">by Jon Oxer</text>
-<text x="40" y="30" size="1.4224" layer="21" font="vector" ratio="16" align="center-left">D2 (SDA)</text>
-<text x="40" y="27.46" size="1.4224" layer="21" font="vector" ratio="16" align="center-left">D3 (SCL)</text>
-<text x="40" y="24.92" size="1.4224" layer="21" font="vector" ratio="16" align="center-left">5V</text>
-<text x="40" y="22.38" size="1.4224" layer="21" font="vector" ratio="16" align="center-left">GND</text>
+<text x="93" y="37" size="1.3" layer="21" font="vector" ratio="17">by Jon Oxer</text>
+<text x="60.24" y="33" size="1.4224" layer="21" font="vector" ratio="16" rot="R270" align="center-left">D2 (SDA)</text>
+<text x="57.7" y="33" size="1.4224" layer="21" font="vector" ratio="16" rot="R270" align="center-left">D3 (SCL)</text>
+<text x="52.62" y="33" size="1.4224" layer="21" font="vector" ratio="16" rot="R270" align="center-left">5V</text>
+<text x="55.16" y="33" size="1.4224" layer="21" font="vector" ratio="16" rot="R270" align="center-left">GND</text>
 <text x="103.04" y="30.89" size="1.4224" layer="22" font="vector" ratio="16" rot="MR0">Copyright 2018 SuperHouse Automation Pty Ltd
 Released under the TAPR Open Hardware License
 www.tapr.org/OHL</text>
@@ -258,7 +258,7 @@ www.tapr.org/OHL</text>
 <wire x1="107" y1="28.5" x2="103" y2="28.5" width="0.3048" layer="21"/>
 <wire x1="103" y1="26.5" x2="107" y2="26.5" width="0.3048" layer="21"/>
 <text x="103.6" y="27.5" size="1.2" layer="21" font="vector" ratio="15" align="center">13</text>
-<text x="39" y="36" size="2.8" layer="21" font="vector" ratio="18" distance="25">Mini Open Adaptive Controller</text>
+<text x="38" y="37" size="2.2" layer="21" font="vector" ratio="18" distance="25">Mini Open Adaptive Controller</text>
 <wire x1="86.186" y1="30.39" x2="84.662" y2="27.088" width="0.4064" layer="21" curve="309.2564"/>
 <wire x1="86.186" y1="30.39" x2="83.9" y2="29.628" width="0.4064" layer="21" curve="-163.361194"/>
 <wire x1="83.9" y1="29.628" x2="84.408" y2="32.676" width="0.4064" layer="21"/>
@@ -283,22 +283,18 @@ www.tapr.org/OHL</text>
 </polygon>
 <text x="87.5" y="27.5" size="2.54" layer="21" font="vector" ratio="15" distance="30">Super
 House</text>
-<rectangle x1="36" y1="20.5" x2="74" y2="32.5" layer="51"/>
-<wire x1="36" y1="32.5" x2="74" y2="32.5" width="0.254" layer="21"/>
-<wire x1="74" y1="32.5" x2="74" y2="20.5" width="0.254" layer="21"/>
-<wire x1="74" y1="20.5" x2="36" y2="20.5" width="0.254" layer="21"/>
-<wire x1="36" y1="20.5" x2="36" y2="32.5" width="0.254" layer="21"/>
-<text x="50" y="22.5" size="1.27" layer="21">I2C OLED</text>
 <text x="81.5" y="22.5" size="1.27" layer="21" font="vector" ratio="15" align="bottom-center">Piezo</text>
 <text x="9" y="34.5" size="1.27" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-center">HWB</text>
-<text x="103" y="23.5" size="1.27" layer="22" font="vector" ratio="15" rot="MR0">Atmega32U4 5V 16MHz</text>
-<text x="103" y="14" size="1.27" layer="22" font="vector" ratio="15" rot="MR0">Inputs: 3.5mm mono sockets
+<text x="103" y="25.5" size="1.27" layer="22" font="vector" ratio="15" rot="MR0">Atmega32U4 5V 16MHz</text>
+<text x="103" y="16" size="1.27" layer="22" font="vector" ratio="15" rot="MR0">Inputs: 3.5mm mono sockets
 Ring = GND
 Tip = Input
 Short between tip and ring to activate</text>
 <text x="5" y="25.5" size="1.27" layer="21" font="vector" ratio="15" align="bottom-center">USB-C</text>
 <text x="107.6" y="34" size="1.2" layer="21" font="vector" ratio="15" align="center-left">5V</text>
 <text x="107.6" y="31.46" size="1.2" layer="21" font="vector" ratio="15" align="center-left">GND</text>
+<hole x="40.75" y="25" drill="3.2"/>
+<hole x="72.25" y="25" drill="3.2"/>
 </plain>
 <libraries>
 <library name="freetronics-jon">
@@ -824,56 +820,69 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 </library>
 <library name="SuperHouse-Displays" urn="urn:adsk.eagle:library:11966779">
 <packages>
-<package name="OLED-128X32-0.91" urn="urn:adsk.eagle:footprint:11973683/1" library_version="5">
-<description>128x32 I2C OLED 0.91"</description>
-<wire x1="-20.58" y1="3.175" x2="-20.58" y2="4.445" width="0.2032" layer="21"/>
-<wire x1="-20.58" y1="4.445" x2="-19.945" y2="5.08" width="0.2032" layer="21"/>
-<wire x1="-18.675" y1="5.08" x2="-18.04" y2="4.445" width="0.2032" layer="21"/>
-<wire x1="-19.945" y1="0" x2="-20.58" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-20.58" y1="0.635" x2="-20.58" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="-20.58" y1="1.905" x2="-19.945" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="-18.675" y1="2.54" x2="-18.04" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="-18.04" y1="1.905" x2="-18.04" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-18.04" y1="0.635" x2="-18.675" y2="0" width="0.2032" layer="21"/>
-<wire x1="-20.58" y1="3.175" x2="-19.945" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="-18.675" y1="2.54" x2="-18.04" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="-18.04" y1="4.445" x2="-18.04" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="-20.58" y1="-4.445" x2="-20.58" y2="-3.175" width="0.2032" layer="21"/>
-<wire x1="-20.58" y1="-3.175" x2="-19.945" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="-18.675" y1="-2.54" x2="-18.04" y2="-3.175" width="0.2032" layer="21"/>
-<wire x1="-19.945" y1="-2.54" x2="-20.58" y2="-1.905" width="0.2032" layer="21"/>
-<wire x1="-20.58" y1="-1.905" x2="-20.58" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-20.58" y1="-0.635" x2="-19.945" y2="0" width="0.2032" layer="21"/>
-<wire x1="-18.675" y1="0" x2="-18.04" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-18.04" y1="-0.635" x2="-18.04" y2="-1.905" width="0.2032" layer="21"/>
-<wire x1="-18.04" y1="-1.905" x2="-18.675" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="-19.945" y1="-5.08" x2="-18.675" y2="-5.08" width="0.2032" layer="21"/>
-<wire x1="-20.58" y1="-4.445" x2="-19.945" y2="-5.08" width="0.2032" layer="21"/>
-<wire x1="-18.675" y1="-5.08" x2="-18.04" y2="-4.445" width="0.2032" layer="21"/>
-<wire x1="-18.04" y1="-3.175" x2="-18.04" y2="-4.445" width="0.2032" layer="21"/>
-<wire x1="-19.945" y1="5.08" x2="-18.675" y2="5.08" width="0.2032" layer="21"/>
-<wire x1="-21.5" y1="-6" x2="-21.5" y2="6" width="0.127" layer="51"/>
-<wire x1="-21.5" y1="6" x2="16.5" y2="6" width="0.127" layer="51"/>
-<wire x1="16.5" y1="6" x2="16.5" y2="-6" width="0.127" layer="51"/>
-<wire x1="16.5" y1="-6" x2="-21.5" y2="-6" width="0.127" layer="51"/>
-<pad name="GND" x="-19.31" y="-3.81" drill="1.016" diameter="1.8796" shape="square" rot="R180"/>
-<pad name="VCC" x="-19.31" y="-1.27" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="SCL" x="-19.31" y="1.27" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="SDA" x="-19.31" y="3.81" drill="1.016" diameter="1.8796" rot="R180"/>
-<text x="-17.2962" y="-7.3612" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-17.22" y="6.675" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-19.564" y1="3.556" x2="-19.056" y2="4.064" layer="51" rot="R90"/>
-<rectangle x1="-19.564" y1="1.016" x2="-19.056" y2="1.524" layer="51" rot="R90"/>
-<rectangle x1="-19.564" y1="-1.524" x2="-19.056" y2="-1.016" layer="51" rot="R90"/>
-<rectangle x1="-19.564" y1="-4.064" x2="-19.056" y2="-3.556" layer="51" rot="R90"/>
-<rectangle x1="-17" y1="-5" x2="16" y2="5" layer="51"/>
+<package name="OLED-128X64-1.3-HO" urn="urn:adsk.eagle:footprint:12058300/1" library_version="1" library_locally_modified="yes">
+<description>OLED module 1.3", header only</description>
+<wire x1="3.175" y1="16.02" x2="4.445" y2="16.02" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="16.02" x2="5.08" y2="15.385" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="14.115" x2="4.445" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="0" y1="15.385" x2="0.635" y2="16.02" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="16.02" x2="1.905" y2="16.02" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="16.02" x2="2.54" y2="15.385" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="14.115" x2="1.905" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="13.48" x2="0.635" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="13.48" x2="0" y2="14.115" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="16.02" x2="2.54" y2="15.385" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="14.115" x2="3.175" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="13.48" x2="3.175" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="-4.445" y1="16.02" x2="-3.175" y2="16.02" width="0.2032" layer="21"/>
+<wire x1="-3.175" y1="16.02" x2="-2.54" y2="15.385" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="14.115" x2="-3.175" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="15.385" x2="-1.905" y2="16.02" width="0.2032" layer="21"/>
+<wire x1="-1.905" y1="16.02" x2="-0.635" y2="16.02" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="16.02" x2="0" y2="15.385" width="0.2032" layer="21"/>
+<wire x1="0" y1="14.115" x2="-0.635" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="13.48" x2="-1.905" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="-1.905" y1="13.48" x2="-2.54" y2="14.115" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="15.385" x2="-5.08" y2="14.115" width="0.2032" layer="21"/>
+<wire x1="-4.445" y1="16.02" x2="-5.08" y2="15.385" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="14.115" x2="-4.445" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="-3.175" y1="13.48" x2="-4.445" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="15.385" x2="5.08" y2="14.115" width="0.2032" layer="21"/>
+<wire x1="-17.7" y1="16.75" x2="17.7" y2="16.75" width="0.127" layer="51"/>
+<wire x1="17.7" y1="16.75" x2="17.7" y2="-16.75" width="0.127" layer="51"/>
+<wire x1="17.7" y1="-16.75" x2="8" y2="-16.75" width="0.127" layer="51"/>
+<wire x1="8" y1="-16.75" x2="-8" y2="-16.75" width="0.127" layer="51"/>
+<wire x1="-8" y1="-16.75" x2="-17.7" y2="-16.75" width="0.127" layer="51"/>
+<wire x1="-17.7" y1="-16.75" x2="-17.7" y2="16.75" width="0.127" layer="51"/>
+<wire x1="-8" y1="-16.75" x2="-8" y2="-12" width="0.127" layer="51"/>
+<wire x1="-8" y1="-12" x2="-5" y2="-13" width="0.127" layer="51"/>
+<wire x1="-5" y1="-13" x2="5" y2="-13" width="0.127" layer="51"/>
+<wire x1="8" y1="-16.75" x2="8" y2="-12" width="0.127" layer="51"/>
+<wire x1="8" y1="-12" x2="5" y2="-13" width="0.127" layer="51"/>
+<wire x1="-8" y1="-12" x2="8" y2="-12" width="0.127" layer="51"/>
+<pad name="VCC" x="-3.81" y="14.75" drill="1.016" diameter="1.8796" shape="square" rot="R90"/>
+<pad name="GND" x="-1.27" y="14.75" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="SCL" x="1.27" y="14.75" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="SDA" x="3.81" y="14.75" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-9.2962" y="11.1788" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="2.78" y="11.215" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="3.556" y1="14.496" x2="4.064" y2="15.004" layer="51"/>
+<rectangle x1="1.016" y1="14.496" x2="1.524" y2="15.004" layer="51"/>
+<rectangle x1="-1.524" y1="14.496" x2="-1.016" y2="15.004" layer="51"/>
+<rectangle x1="-4.064" y1="14.496" x2="-3.556" y2="15.004" layer="51"/>
+<rectangle x1="-15.2" y1="-5.6" x2="15.2" y2="9.4" layer="51"/>
+<circle x="-15.2" y="14.25" radius="1.5" width="0.2" layer="51"/>
+<circle x="15.2" y="14.25" radius="1.5" width="0.2" layer="51"/>
+<circle x="15.2" y="-14.25" radius="1.5" width="0.2" layer="51"/>
+<circle x="-15.2" y="-14.25" radius="1.5" width="0.2" layer="51"/>
 </package>
 </packages>
 <packages3d>
-<package3d name="OLED-128X32-0.91" urn="urn:adsk.eagle:package:11973684/2" type="model" library_version="5">
-<description>128x32 I2C OLED 0.91"</description>
+<package3d name="HDRVR4W64P254_1X4_1016X254X860C" urn="urn:adsk.eagle:package:12058301/2" type="model" library_version="7" library_locally_modified="yes">
+<description>Single-row, 4-pin Receptacle Header (Female) Straight, 2.54 mm (0.10 in) col pitch, 8.60 mm insulator length, 10.16 X 2.54 X 8.60 mm body
+&lt;p&gt;Single-row (1X4), 4-pin Receptacle Header (Female) Straight package with 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.00 mm tail length and 8.60 mm insulator length with overall size 10.16 X 2.54 X 8.60 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
 <packageinstances>
-<packageinstance name="OLED-128X32-0.91"/>
+<packageinstance name="OLED-128X64-1.3-HO"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1072,9 +1081,9 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C2" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="100nF" x="41" y="33.5" smashed="yes">
-<attribute name="NAME" x="40.7206" y="33.9826" size="0.6096" layer="25" font="vector" rot="R270"/>
-<attribute name="VALUE" x="39.484" y="31.857" size="0.8128" layer="27" font="vector"/>
+<element name="C2" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="100nF" x="36.5" y="31" smashed="yes" rot="R270">
+<attribute name="NAME" x="36.9826" y="31.2794" size="0.6096" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="35.484" y="32.357" size="0.8128" layer="27" font="vector"/>
 </element>
 <element name="R2" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="R0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="10K" x="21" y="27" smashed="yes" rot="R180">
 <attribute name="NAME" x="21.2793" y="26.5936" size="0.6096" layer="25" font="vector" rot="R90"/>
@@ -1086,7 +1095,7 @@ design rules under a new name.</description>
 </element>
 <element name="C1" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" package="C0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="100nF" x="35" y="25" smashed="yes" rot="R90">
 <attribute name="NAME" x="34.5174" y="24.7206" size="0.6096" layer="25" font="vector"/>
-<attribute name="VALUE" x="33.484" y="24.857" size="0.8128" layer="27" font="vector"/>
+<attribute name="VALUE" x="34.484" y="22.857" size="0.8128" layer="27" font="vector"/>
 </element>
 <element name="ICSP" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="2X03PTH" package3d_urn="urn:adsk.eagle:package:11765966/5" value="ICSP" x="32.7036" y="36.64" smashed="yes">
 <attribute name="NAME" x="32.729" y="35.8526" size="0.6096" layer="25" ratio="10" rot="R90"/>
@@ -1284,9 +1293,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="107.8288" y="35.3462" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="102.825" y="35.27" size="0.8128" layer="27" rot="R270"/>
 </element>
-<element name="MOD1" library="SuperHouse-Displays" library_urn="urn:adsk.eagle:library:11966779" package="OLED-128X32-0.91" package3d_urn="urn:adsk.eagle:package:11973684/2" value="OLED-I2C128X32-0.91" x="57.3" y="26.2" smashed="yes">
-<attribute name="NAME" x="40.0038" y="18.8388" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="40.08" y="32.875" size="1.27" layer="27"/>
+<element name="MOD2" library="SuperHouse-Displays" library_urn="urn:adsk.eagle:library:11966779" package="OLED-128X64-1.3-HO" package3d_urn="urn:adsk.eagle:package:12058301/2" value="OLED-I2C128X64-1.3-HO" x="56.5" y="20" smashed="yes">
+<attribute name="NAME" x="47.2038" y="31.1788" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="47.28" y="22.215" size="1.27" layer="27"/>
 </element>
 </elements>
 <signals>
@@ -1399,25 +1408,26 @@ design rules under a new name.</description>
 <wire x1="30" y1="25" x2="30.5" y2="25.5" width="0.254" layer="1"/>
 <wire x1="27.5" y1="27.5" x2="30" y2="25" width="0.254" layer="16"/>
 <wire x1="30" y1="25" x2="32" y2="25" width="0.254" layer="16"/>
-<wire x1="40.238" y1="33.5" x2="36.5" y2="33.5" width="0.3048" layer="1"/>
-<wire x1="36.5" y1="33.5" x2="35" y2="32" width="0.3048" layer="1"/>
 <wire x1="110.762" y1="8.762" x2="110.238" y2="8.238" width="0.254" layer="1"/>
 <wire x1="110.762" y1="19" x2="110.762" y2="8.762" width="0.254" layer="1"/>
-<wire x1="31.5" y1="17.5" x2="44" y2="17.5" width="0.254" layer="16"/>
-<wire x1="44" y1="17.5" x2="45" y2="18.5" width="0.254" layer="16"/>
-<wire x1="45" y1="18.5" x2="45" y2="22" width="0.254" layer="16"/>
 <contactref element="R13" pad="2"/>
 <wire x1="18.5" y1="5.238" x2="18.5" y2="3.5" width="0.254" layer="1"/>
 <contactref element="JP1" pad="1"/>
 <wire x1="106" y1="34" x2="86.5" y2="34" width="0.3048" layer="1"/>
-<wire x1="86.5" y1="34" x2="85.5" y2="35" width="0.3048" layer="1"/>
-<wire x1="85.5" y1="35" x2="41" y2="35" width="0.3048" layer="1"/>
-<wire x1="41" y1="35" x2="40.238" y2="34.238" width="0.3048" layer="1"/>
-<wire x1="40.238" y1="34.238" x2="40.238" y2="33.5" width="0.3048" layer="1"/>
-<contactref element="MOD1" pad="VCC"/>
-<wire x1="42.07" y1="24.93" x2="37.99" y2="24.93" width="0.254" layer="16"/>
-<wire x1="45" y1="22" x2="42.07" y2="24.93" width="0.254" layer="16"/>
-<wire x1="24.6" y1="22.5" x2="27.5" y2="24.4" width="0" layer="19" extent="1-1"/>
+<contactref element="MOD2" pad="VCC"/>
+<wire x1="35" y1="32" x2="36.262" y2="32" width="0.254" layer="1"/>
+<wire x1="36.262" y1="32" x2="36.5" y2="31.762" width="0.254" layer="1"/>
+<wire x1="36.5" y1="31.762" x2="49.702" y2="31.762" width="0.254" layer="1"/>
+<wire x1="49.702" y1="31.762" x2="52.69" y2="34.75" width="0.254" layer="1"/>
+<wire x1="86.5" y1="34" x2="78" y2="34" width="0.254" layer="1"/>
+<wire x1="78" y1="34" x2="75.5" y2="31.5" width="0.254" layer="1"/>
+<wire x1="55.94" y1="31.5" x2="52.69" y2="34.75" width="0.254" layer="1"/>
+<wire x1="75.5" y1="31.5" x2="55.94" y2="31.5" width="0.254" layer="1"/>
+<wire x1="31.5" y1="17.5" x2="44.5" y2="17.5" width="0.254" layer="16"/>
+<wire x1="44.5" y1="17.5" x2="46" y2="19" width="0.254" layer="16"/>
+<wire x1="46" y1="29" x2="43" y2="32" width="0.254" layer="16"/>
+<wire x1="43" y1="32" x2="35" y2="32" width="0.254" layer="16"/>
+<wire x1="46" y1="19" x2="46" y2="29" width="0.254" layer="16"/>
 </signal>
 <signal name="RESET">
 <contactref element="R2" pad="1"/>
@@ -1492,7 +1502,6 @@ design rules under a new name.</description>
 <wire x1="27" y1="21" x2="28" y2="21" width="0.254" layer="1"/>
 <wire x1="25.5" y1="19.5" x2="27" y2="21" width="0.254" layer="1"/>
 <via x="26" y="37" extent="1-16" drill="0.5"/>
-<via x="47.9" y="26" extent="1-16" drill="0.5"/>
 <contactref element="S10" pad="2"/>
 <contactref element="SJ1" pad="2"/>
 <contactref element="LED1" pad="C"/>
@@ -1539,7 +1548,6 @@ design rules under a new name.</description>
 <contactref element="J7" pad="3"/>
 <contactref element="J8" pad="3"/>
 <contactref element="PIEZO" pad="1"/>
-<via x="44.4" y="24.5" extent="1-16" drill="0.5"/>
 <via x="26.9" y="32.5" extent="1-16" drill="0.5"/>
 <via x="23.9" y="6" extent="1-16" drill="0.5"/>
 <wire x1="24.6" y1="22" x2="21.5" y2="22" width="0.254" layer="1"/>
@@ -1550,7 +1558,7 @@ design rules under a new name.</description>
 <wire x1="31.4" y1="19" x2="32.5" y2="19" width="0.254" layer="1"/>
 <wire x1="32.5" y1="19" x2="33" y2="18.5" width="0.254" layer="1"/>
 <contactref element="JP1" pad="2"/>
-<contactref element="MOD1" pad="GND"/>
+<contactref element="MOD2" pad="GND"/>
 </signal>
 <signal name="A0">
 <contactref element="IC1" pad="36"/>
@@ -1699,8 +1707,8 @@ design rules under a new name.</description>
 <wire x1="24.6" y1="23.5" x2="24" y2="23.5" width="0.254" layer="1"/>
 <wire x1="24" y1="23.5" x2="23" y2="24.5" width="0.254" layer="1"/>
 <wire x1="23" y1="24.5" x2="23" y2="27.5" width="0.254" layer="1"/>
-<wire x1="74.5" y1="19.5" x2="76" y2="21" width="0.254" layer="1"/>
-<wire x1="74.5" y1="19.5" x2="42" y2="19.5" width="0.254" layer="1"/>
+<wire x1="77.5" y1="19.5" x2="79" y2="21" width="0.254" layer="1"/>
+<wire x1="77.5" y1="19.5" x2="42" y2="19.5" width="0.254" layer="1"/>
 <via x="42" y="19.5" extent="1-16" drill="0.5"/>
 <wire x1="41" y1="20.5" x2="42" y2="19.5" width="0.254" layer="16"/>
 <wire x1="21.5" y1="29" x2="21.5" y2="31" width="0.254" layer="1"/>
@@ -1708,7 +1716,7 @@ design rules under a new name.</description>
 <wire x1="23" y1="27.5" x2="21.5" y2="29" width="0.254" layer="1"/>
 <wire x1="26" y1="20.5" x2="22.5" y2="24" width="0.254" layer="16"/>
 <wire x1="26" y1="20.5" x2="41" y2="20.5" width="0.254" layer="16"/>
-<wire x1="76" y1="21" x2="80.738" y2="21" width="0.254" layer="1"/>
+<wire x1="79" y1="21" x2="80.738" y2="21" width="0.254" layer="1"/>
 <wire x1="22.5" y1="24" x2="22.5" y2="26.5" width="0.254" layer="16"/>
 <wire x1="22.5" y1="26.5" x2="21.5" y2="27.5" width="0.254" layer="16"/>
 <wire x1="21.5" y1="27.5" x2="21.5" y2="31" width="0.254" layer="16"/>
@@ -1722,9 +1730,8 @@ design rules under a new name.</description>
 <wire x1="30" y1="17.6" x2="30" y2="14.5" width="0.254" layer="1"/>
 <wire x1="30" y1="14.5" x2="29.481971875" y2="13.981971875" width="0.254" layer="1"/>
 <via x="29.481971875" y="13.981971875" extent="1-16" drill="0.5"/>
-<wire x1="29.481971875" y1="13.981971875" x2="50.981971875" y2="13.981971875" width="0.254" layer="16"/>
-<wire x1="66" y1="29" x2="110" y2="29" width="0.254" layer="16"/>
-<wire x1="50.981971875" y1="13.981971875" x2="66" y2="29" width="0.254" layer="16"/>
+<wire x1="94.981971875" y1="13.981971875" x2="110" y2="29" width="0.254" layer="16"/>
+<wire x1="29.481971875" y1="13.981971875" x2="94.981971875" y2="13.981971875" width="0.254" layer="16"/>
 </signal>
 <signal name="RXLED_SS">
 <contactref element="IC1" pad="8"/>
@@ -1737,9 +1744,9 @@ design rules under a new name.</description>
 <wire x1="26.5" y1="21" x2="23" y2="24.5" width="0.254" layer="16"/>
 <wire x1="23" y1="24.5" x2="23" y2="29" width="0.254" layer="16"/>
 <via x="23" y="29" extent="1-16" drill="0.5"/>
-<wire x1="99.5" y1="27" x2="78.5" y2="27" width="0.254" layer="1"/>
-<wire x1="72.5" y1="21" x2="43" y2="21" width="0.254" layer="1"/>
-<wire x1="78.5" y1="27" x2="72.5" y2="21" width="0.254" layer="1"/>
+<wire x1="99.5" y1="27" x2="81.5" y2="27" width="0.254" layer="1"/>
+<wire x1="75.5" y1="21" x2="43" y2="21" width="0.254" layer="1"/>
+<wire x1="81.5" y1="27" x2="75.5" y2="21" width="0.254" layer="1"/>
 <wire x1="27" y1="24.4" x2="27" y2="26.53605625" width="0.254" layer="1"/>
 <wire x1="27" y1="26.53605625" x2="26.03605625" y2="27.5" width="0.254" layer="1"/>
 <wire x1="26.03605625" y1="27.5" x2="24.5" y2="27.5" width="0.254" layer="1"/>
@@ -1981,13 +1988,11 @@ design rules under a new name.</description>
 <wire x1="24.6" y1="20" x2="22" y2="20" width="0.254" layer="1"/>
 <wire x1="22" y1="20" x2="19" y2="17" width="0.254" layer="1"/>
 <via x="19" y="17" extent="1-16" drill="0.5"/>
-<wire x1="48.5" y1="15" x2="49.5" y2="16" width="0.254" layer="16"/>
-<wire x1="49.5" y1="16" x2="49.5" y2="26.5" width="0.254" layer="16"/>
 <wire x1="21" y1="15" x2="19" y2="17" width="0.254" layer="16"/>
 <wire x1="21" y1="15" x2="48.5" y2="15" width="0.254" layer="16"/>
-<contactref element="MOD1" pad="SDA"/>
-<wire x1="45.99" y1="30.01" x2="37.99" y2="30.01" width="0.254" layer="16"/>
-<wire x1="49.5" y1="26.5" x2="45.99" y2="30.01" width="0.254" layer="16"/>
+<contactref element="MOD2" pad="SDA"/>
+<wire x1="60.31" y1="26.81" x2="60.31" y2="34.75" width="0.254" layer="16"/>
+<wire x1="48.5" y1="15" x2="60.31" y2="26.81" width="0.254" layer="16"/>
 </signal>
 <signal name="D3_SCL">
 <contactref element="IC1" pad="18"/>
@@ -1997,11 +2002,9 @@ design rules under a new name.</description>
 <via x="19" y="19" extent="1-16" drill="0.5"/>
 <wire x1="19" y1="19" x2="22" y2="16" width="0.254" layer="16"/>
 <wire x1="22" y1="16" x2="46" y2="16" width="0.254" layer="16"/>
-<wire x1="46" y1="16" x2="47" y2="17" width="0.254" layer="16"/>
-<wire x1="47" y1="17" x2="47" y2="24" width="0.254" layer="16"/>
-<contactref element="MOD1" pad="SCL"/>
-<wire x1="43.53" y1="27.47" x2="37.99" y2="27.47" width="0.254" layer="16"/>
-<wire x1="47" y1="24" x2="43.53" y2="27.47" width="0.254" layer="16"/>
+<contactref element="MOD2" pad="SCL"/>
+<wire x1="57.77" y1="27.77" x2="57.77" y2="34.75" width="0.254" layer="16"/>
+<wire x1="46" y1="16" x2="57.77" y2="27.77" width="0.254" layer="16"/>
 </signal>
 <signal name="N$1">
 <contactref element="J9" pad="B5"/>

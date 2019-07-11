@@ -2697,6 +2697,62 @@ Standard 0.1" header.</description>
 <rectangle x1="-19.564" y1="-4.064" x2="-19.056" y2="-3.556" layer="51" rot="R90"/>
 <rectangle x1="-17" y1="-5" x2="16" y2="5" layer="51"/>
 </package>
+<package name="OLED-128X64-1.3-HO" urn="urn:adsk.eagle:footprint:12058300/1" library_version="1" library_locally_modified="yes">
+<description>OLED module 1.3", header only</description>
+<wire x1="3.175" y1="16.02" x2="4.445" y2="16.02" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="16.02" x2="5.08" y2="15.385" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="14.115" x2="4.445" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="0" y1="15.385" x2="0.635" y2="16.02" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="16.02" x2="1.905" y2="16.02" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="16.02" x2="2.54" y2="15.385" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="14.115" x2="1.905" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="13.48" x2="0.635" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="13.48" x2="0" y2="14.115" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="16.02" x2="2.54" y2="15.385" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="14.115" x2="3.175" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="13.48" x2="3.175" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="-4.445" y1="16.02" x2="-3.175" y2="16.02" width="0.2032" layer="21"/>
+<wire x1="-3.175" y1="16.02" x2="-2.54" y2="15.385" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="14.115" x2="-3.175" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="15.385" x2="-1.905" y2="16.02" width="0.2032" layer="21"/>
+<wire x1="-1.905" y1="16.02" x2="-0.635" y2="16.02" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="16.02" x2="0" y2="15.385" width="0.2032" layer="21"/>
+<wire x1="0" y1="14.115" x2="-0.635" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="13.48" x2="-1.905" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="-1.905" y1="13.48" x2="-2.54" y2="14.115" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="15.385" x2="-5.08" y2="14.115" width="0.2032" layer="21"/>
+<wire x1="-4.445" y1="16.02" x2="-5.08" y2="15.385" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="14.115" x2="-4.445" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="-3.175" y1="13.48" x2="-4.445" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="15.385" x2="5.08" y2="14.115" width="0.2032" layer="21"/>
+<wire x1="-17.7" y1="16.75" x2="17.7" y2="16.75" width="0.127" layer="51"/>
+<wire x1="17.7" y1="16.75" x2="17.7" y2="-16.75" width="0.127" layer="51"/>
+<wire x1="17.7" y1="-16.75" x2="8" y2="-16.75" width="0.127" layer="51"/>
+<wire x1="8" y1="-16.75" x2="-8" y2="-16.75" width="0.127" layer="51"/>
+<wire x1="-8" y1="-16.75" x2="-17.7" y2="-16.75" width="0.127" layer="51"/>
+<wire x1="-17.7" y1="-16.75" x2="-17.7" y2="16.75" width="0.127" layer="51"/>
+<wire x1="-8" y1="-16.75" x2="-8" y2="-12" width="0.127" layer="51"/>
+<wire x1="-8" y1="-12" x2="-5" y2="-13" width="0.127" layer="51"/>
+<wire x1="-5" y1="-13" x2="5" y2="-13" width="0.127" layer="51"/>
+<wire x1="8" y1="-16.75" x2="8" y2="-12" width="0.127" layer="51"/>
+<wire x1="8" y1="-12" x2="5" y2="-13" width="0.127" layer="51"/>
+<wire x1="-8" y1="-12" x2="8" y2="-12" width="0.127" layer="51"/>
+<pad name="VCC" x="-3.81" y="14.75" drill="1.016" diameter="1.8796" shape="square" rot="R90"/>
+<pad name="GND" x="-1.27" y="14.75" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="SCL" x="1.27" y="14.75" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="SDA" x="3.81" y="14.75" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-9.2962" y="11.1788" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="2.78" y="11.215" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="3.556" y1="14.496" x2="4.064" y2="15.004" layer="51"/>
+<rectangle x1="1.016" y1="14.496" x2="1.524" y2="15.004" layer="51"/>
+<rectangle x1="-1.524" y1="14.496" x2="-1.016" y2="15.004" layer="51"/>
+<rectangle x1="-4.064" y1="14.496" x2="-3.556" y2="15.004" layer="51"/>
+<rectangle x1="-15.2" y1="-5.6" x2="15.2" y2="9.4" layer="51"/>
+<circle x="-15.2" y="14.25" radius="1.5" width="0.2" layer="51"/>
+<circle x="15.2" y="14.25" radius="1.5" width="0.2" layer="51"/>
+<circle x="15.2" y="-14.25" radius="1.5" width="0.2" layer="51"/>
+<circle x="-15.2" y="-14.25" radius="1.5" width="0.2" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="OLED-128X64-0.96" urn="urn:adsk.eagle:package:11966782/1" type="box" library_version="5">
@@ -2716,6 +2772,13 @@ Standard 0.1" header.</description>
 <packageinstance name="OLED-128X32-0.91"/>
 </packageinstances>
 </package3d>
+<package3d name="HDRVR4W64P254_1X4_1016X254X860C" urn="urn:adsk.eagle:package:12058301/2" type="model" library_version="7" library_locally_modified="yes">
+<description>Single-row, 4-pin Receptacle Header (Female) Straight, 2.54 mm (0.10 in) col pitch, 8.60 mm insulator length, 10.16 X 2.54 X 8.60 mm body
+&lt;p&gt;Single-row (1X4), 4-pin Receptacle Header (Female) Straight package with 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.00 mm tail length and 8.60 mm insulator length with overall size 10.16 X 2.54 X 8.60 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="OLED-128X64-1.3-HO"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="OLED-I2C" urn="urn:adsk.eagle:symbol:11966781/1" library_version="1" library_locally_modified="yes">
@@ -2732,7 +2795,7 @@ Standard 0.1" header.</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="OLED-I2C" urn="urn:adsk.eagle:component:11966783/5" prefix="MOD" library_version="1" library_locally_modified="yes">
+<deviceset name="OLED-I2C" urn="urn:adsk.eagle:component:11966783/5" locally_modified="yes" prefix="MOD" library_version="1" library_locally_modified="yes">
 <description>OLED module with SSD1306 I2C driver</description>
 <gates>
 <gate name="G$1" symbol="OLED-I2C" x="0" y="0"/>
@@ -2775,6 +2838,20 @@ Standard 0.1" header.</description>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:11973684/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="128X64-1.3-HO" package="OLED-128X64-1.3-HO">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12058301/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2885,7 +2962,7 @@ Standard 0.1" header.</description>
 <part name="R13" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="10K"/>
 <part name="U$16" library="SparkFun" deviceset="5V" device=""/>
 <part name="JP1" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M02" device="-PLAIN" package3d_urn="urn:adsk.eagle:package:11818419/1" value="5V"/>
-<part name="MOD1" library="SuperHouse-Displays" library_urn="urn:adsk.eagle:library:11966779" deviceset="OLED-I2C" device="128X32-0.91" package3d_urn="urn:adsk.eagle:package:11973684/2"/>
+<part name="MOD2" library="SuperHouse-Displays" library_urn="urn:adsk.eagle:library:11966779" deviceset="OLED-I2C" device="128X64-1.3-HO" package3d_urn="urn:adsk.eagle:package:12058301/2" value="OLED-I2C128X64-1.3-HO"/>
 </parts>
 <sheets>
 <sheet>
@@ -2902,9 +2979,9 @@ custom fuse settings to allow the keypad to boot straight
 to keypad mode without this jumper in place, or go to the
 bootloader with the jumper.</text>
 <text x="7.62" y="20.32" size="3.048" layer="94">Mini Open Adaptive Controller</text>
-<text x="38.1" y="14.478" size="1.778" layer="94">V1.1 (2019-07-07)</text>
+<text x="38.1" y="14.478" size="1.778" layer="94">V2.0 (2019-07-11)</text>
 <text x="7.62" y="14.478" size="1.778" layer="94">SKU: MOAC</text>
-<text x="7.366" y="9.398" size="1.778" layer="94">(C)2019 SuperHouse Automation Pty Ltd: www.superhouse.tv</text>
+<text x="7.366" y="9.398" size="1.778" layer="94">(C)2018-2019 SuperHouse Automation Pty Ltd: www.superhouse.tv</text>
 <text x="7.366" y="6.35" size="1.778" layer="94">Licensed under the TAPR Open Hardware License: www.tapr.org/ohl</text>
 <text x="68.326" y="14.478" size="1.778" layer="94">www.superhouse.tv/moac</text>
 <text x="162.56" y="175.26" size="2.54" layer="94" ratio="12">Power / Status</text>
@@ -2931,7 +3008,7 @@ bootloader with the jumper.</text>
 <wire x1="109.22" y1="154.94" x2="109.22" y2="124.46" width="0.4064" layer="97" style="longdash"/>
 <wire x1="109.22" y1="124.46" x2="109.22" y2="101.6" width="0.4064" layer="97" style="longdash"/>
 <text x="218.44" y="81.28" size="1.778" layer="97">Button3</text>
-<text x="111.76" y="149.86" size="2.54" layer="94" ratio="12">128x32 OLED Header</text>
+<text x="111.76" y="149.86" size="2.54" layer="94" ratio="12">128x64 OLED Module</text>
 <wire x1="109.22" y1="154.94" x2="154.94" y2="154.94" width="0.4064" layer="97" style="longdash"/>
 <wire x1="109.22" y1="124.46" x2="154.94" y2="124.46" width="0.4064" layer="97" style="longdash"/>
 <text x="111.76" y="119.38" size="2.54" layer="94" ratio="12">Piezo Sound Output</text>
@@ -3264,8 +3341,8 @@ bootloader with the jumper.</text>
 <attribute name="VALUE" x="193.04" y="162.56" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="193.04" y="151.638" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="MOD1" gate="G$1" x="134.62" y="137.16" smashed="yes">
-<attribute name="NAME" x="129.54" y="142.748" size="1.778" layer="95"/>
+<instance part="MOD2" gate="G$1" x="132.08" y="137.16" smashed="yes">
+<attribute name="NAME" x="127" y="142.748" size="1.778" layer="95"/>
 <attribute name="VALUE" x="119.38" y="129.54" size="1.778" layer="96"/>
 </instance>
 </instances>
@@ -3432,10 +3509,10 @@ bootloader with the jumper.</text>
 <pinref part="U$16" gate="G$1" pin="5V"/>
 </segment>
 <segment>
-<pinref part="MOD1" gate="G$1" pin="VCC"/>
-<wire x1="144.78" y1="139.7" x2="149.86" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="139.7" x2="149.86" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="5V"/>
 <wire x1="149.86" y1="139.7" x2="149.86" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="MOD2" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -3643,10 +3720,10 @@ bootloader with the jumper.</text>
 <pinref part="GND20" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="MOD1" gate="G$1" pin="GND"/>
 <pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="144.78" y1="134.62" x2="149.86" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="134.62" x2="149.86" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="134.62" x2="149.86" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="MOD2" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -4036,9 +4113,9 @@ bootloader with the jumper.</text>
 <pinref part="IC1" gate="G$1" pin="PD1(INT1/SDA)"/>
 </segment>
 <segment>
-<wire x1="124.46" y1="139.7" x2="119.38" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="MOD1" gate="G$1" pin="SDA"/>
+<wire x1="121.92" y1="139.7" x2="119.38" y2="139.7" width="0.1524" layer="91"/>
 <label x="119.38" y="139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="MOD2" gate="G$1" pin="SDA"/>
 </segment>
 </net>
 <net name="D3_SCL" class="0">
@@ -4048,9 +4125,9 @@ bootloader with the jumper.</text>
 <pinref part="IC1" gate="G$1" pin="PD0(INT0/OC0B/SCL)"/>
 </segment>
 <segment>
-<wire x1="124.46" y1="134.62" x2="119.38" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="MOD1" gate="G$1" pin="SCL"/>
+<wire x1="121.92" y1="134.62" x2="119.38" y2="134.62" width="0.1524" layer="91"/>
 <label x="119.38" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="MOD2" gate="G$1" pin="SCL"/>
 </segment>
 </net>
 <net name="N$1" class="0">
