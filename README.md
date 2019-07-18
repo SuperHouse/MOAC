@@ -1,6 +1,6 @@
 Mini Open Adaptive Controller
 ==============================
-Copyright 2018 SuperHouse Automation Pty Ltd  www.superhouse.tv  
+Copyright 2018-2019 SuperHouse Automation Pty Ltd  www.superhouse.tv  
 
 Universal input device that allows external switches, buttons, etc
 to be connected using 3.5mm mono plugs, and then emulate a USB
@@ -15,7 +15,7 @@ Features:
  * ATmega 32u4 MCU
  * 8 switch inputs (active low: short to activate)
  * HWB (hardware boot) button and solder jumper to allow disabling bootloader
- * 128x32 OLED module
+ * 128x32 OLED module (SH1106 or SSD3306)
  * USB-C connector
 
 You can view more details at:
