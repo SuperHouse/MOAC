@@ -2038,11 +2038,6 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="OLED-128X64-0.96" urn="urn:adsk.eagle:package:11966782/1" type="box" library_version="5">
-<packageinstances>
-<packageinstance name="OLED-128X64-0.96"/>
-</packageinstances>
-</package3d>
 <package3d name="OLED-128X64-1.3" urn="urn:adsk.eagle:package:11966793/2" type="model" library_version="5">
 <description>OLED module 1.3"</description>
 <packageinstances>
@@ -2062,6 +2057,11 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <packageinstance name="OLED-128X64-1.3-HO"/>
 </packageinstances>
 </package3d>
+<package3d name="OLED-128X64-0.96" urn="urn:adsk.eagle:package:11966782/2" type="model" library_version="9">
+<packageinstances>
+<packageinstance name="OLED-128X64-0.96"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="OLED-I2C" urn="urn:adsk.eagle:symbol:11966781/1" library_version="1" library_locally_modified="yes">
@@ -2078,7 +2078,7 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="OLED-I2C" urn="urn:adsk.eagle:component:11966783/6" prefix="MOD" library_version="1" library_locally_modified="yes">
+<deviceset name="OLED-I2C" urn="urn:adsk.eagle:component:11966783/7" prefix="MOD" library_version="1" library_locally_modified="yes">
 <description>OLED module with SSD1306 I2C driver</description>
 <gates>
 <gate name="G$1" symbol="OLED-I2C" x="0" y="0"/>
@@ -2092,7 +2092,7 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:11966782/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11966782/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2539,7 +2539,7 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="QFP80P1200X1200X120-44" urn="urn:adsk.eagle:package:12190647/2" type="model" library_version="13">
+<package3d name="QFP80P1200X1200X120-44" urn="urn:adsk.eagle:package:12190647/3" type="model" library_version="14">
 <description>44-QFP, 0.80 mm pitch, 12.00 mm span, 10.00 X 10.00 X 1.20 mm body
 &lt;p&gt;44-pin QFP package with 0.80 mm pitch, 12.00 mm lead span1 X 12.00 mm lead span2 with body size 10.00 X 10.00 X 1.20 mm&lt;/p&gt;</description>
 <packageinstances>
@@ -2602,7 +2602,7 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ATMEGA32U4NT" urn="urn:adsk.eagle:component:12190648/2" library_version="13">
+<deviceset name="ATMEGA32U4NT" urn="urn:adsk.eagle:component:12190648/3" library_version="14">
 <description>ATmega32u4 MCU</description>
 <gates>
 <gate name="G$1" symbol="ATMEGA32U4NT" x="0" y="0"/>
@@ -2656,7 +2656,7 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <connect gate="G$1" pin="XTAL2" pad="16"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12190647/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12190647/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2766,7 +2766,7 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <part name="R13" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="10K"/>
 <part name="U$16" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="5V" device=""/>
 <part name="MOD2" library="SuperHouse-Displays" library_urn="urn:adsk.eagle:library:11966779" deviceset="OLED-I2C" device="128X64-1.3-HO" package3d_urn="urn:adsk.eagle:package:12058301/2" value="OLED-I2C128X64-1.3-HO"/>
-<part name="IC1" library="SuperHouse-MCUs" library_urn="urn:adsk.eagle:library:11815114" deviceset="ATMEGA32U4NT" device="-TQFP" package3d_urn="urn:adsk.eagle:package:12190647/2"/>
+<part name="IC1" library="SuperHouse-MCUs" library_urn="urn:adsk.eagle:library:11815114" deviceset="ATMEGA32U4NT" device="-TQFP" package3d_urn="urn:adsk.eagle:package:12190647/3"/>
 </parts>
 <sheets>
 <sheet>
@@ -2783,7 +2783,7 @@ custom fuse settings to allow the keypad to boot straight
 to keypad mode without this jumper in place, or go to the
 bootloader with the jumper.</text>
 <text x="7.62" y="20.32" size="3.048" layer="94">Mini Open Adaptive Controller</text>
-<text x="38.1" y="14.478" size="1.778" layer="94">V2.0 (2019-07-11)</text>
+<text x="38.1" y="14.478" size="1.778" layer="94">V2.1 (2019-07-31)</text>
 <text x="7.62" y="14.478" size="1.778" layer="94">SKU: MOAC</text>
 <text x="7.366" y="9.398" size="1.778" layer="94">(C)2018-2019 SuperHouse Automation Pty Ltd: www.superhouse.tv</text>
 <text x="7.366" y="6.35" size="1.778" layer="94">Licensed under the TAPR Open Hardware License: www.tapr.org/ohl</text>
@@ -2797,7 +2797,7 @@ bootloader with the jumper.</text>
 <wire x1="3.81" y1="90.17" x2="109.22" y2="90.17" width="0.4064" layer="97" style="longdash"/>
 <text x="218.44" y="76.2" size="1.778" layer="97">Button1</text>
 <text x="218.44" y="78.74" size="1.778" layer="97">Button2</text>
-<text x="218.44" y="30.48" size="1.778" layer="97">Button8</text>
+<text x="218.44" y="33.02" size="1.778" layer="97">Button8</text>
 <text x="218.44" y="25.4" size="1.778" layer="97">Button7</text>
 <text x="218.44" y="88.9" size="1.778" layer="97">Button6</text>
 <text x="218.44" y="86.36" size="1.778" layer="97">Button5</text>
@@ -3773,18 +3773,11 @@ bootloader with the jumper.</text>
 <pinref part="IC1" gate="G$1" pin="PD3(INT3/TXD1)"/>
 </segment>
 </net>
-<net name="D6_A8" class="0">
+<net name="D6_A7" class="0">
 <segment>
-<wire x1="203.2" y1="33.02" x2="215.9" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="33.02" x2="228.6" y2="33.02" width="0.1524" layer="91"/>
 <label x="205.74" y="33.02" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="PD7(OC4D/ADC10/T0)"/>
-</segment>
-</net>
-<net name="D12_A7" class="0">
-<segment>
-<wire x1="203.2" y1="30.48" x2="228.6" y2="30.48" width="0.1524" layer="91"/>
-<label x="205.74" y="30.48" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="PD6(T1/OC4D/ADC9)"/>
 </segment>
 <segment>
 <wire x1="83.82" y1="101.6" x2="86.36" y2="101.6" width="0.1524" layer="91"/>
@@ -3810,21 +3803,21 @@ bootloader with the jumper.</text>
 <junction x="86.36" y="121.92"/>
 </segment>
 </net>
-<net name="D8_A9" class="0">
+<net name="D8_A8" class="0">
 <segment>
 <wire x1="203.2" y1="48.26" x2="215.9" y2="48.26" width="0.1524" layer="91"/>
 <label x="205.74" y="48.26" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="PB4(ADC11)"/>
 </segment>
 </net>
-<net name="D9_A10" class="0">
+<net name="D9_A9" class="0">
 <segment>
 <wire x1="203.2" y1="50.8" x2="215.9" y2="50.8" width="0.1524" layer="91"/>
 <label x="205.74" y="50.8" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="PB5(OC1A/!OC4B!/ADC12)"/>
 </segment>
 </net>
-<net name="D10_A11" class="0">
+<net name="D10_A10" class="0">
 <segment>
 <wire x1="203.2" y1="53.34" x2="215.9" y2="53.34" width="0.1524" layer="91"/>
 <label x="205.74" y="53.34" size="1.778" layer="95"/>
@@ -4034,6 +4027,13 @@ bootloader with the jumper.</text>
 <wire x1="132.08" y1="111.76" x2="137.16" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="PIEZO" gate="G$1" pin="2"/>
 <pinref part="SJ2" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="D12_A11" class="0">
+<segment>
+<wire x1="203.2" y1="30.48" x2="215.9" y2="30.48" width="0.1524" layer="91"/>
+<label x="205.74" y="30.48" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="PD6(T1/OC4D/ADC9)"/>
 </segment>
 </net>
 </nets>
