@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1936,50 +1936,6 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <circle x="15.2" y="-14.25" radius="1.5" width="0.2" layer="51"/>
 <circle x="-15.2" y="-14.25" radius="1.5" width="0.2" layer="51"/>
 </package>
-<package name="OLED-128X32-0.91" urn="urn:adsk.eagle:footprint:11973683/1" library_version="5">
-<description>128x32 I2C OLED 0.91"</description>
-<wire x1="-20.58" y1="3.175" x2="-20.58" y2="4.445" width="0.2032" layer="21"/>
-<wire x1="-20.58" y1="4.445" x2="-19.945" y2="5.08" width="0.2032" layer="21"/>
-<wire x1="-18.675" y1="5.08" x2="-18.04" y2="4.445" width="0.2032" layer="21"/>
-<wire x1="-19.945" y1="0" x2="-20.58" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-20.58" y1="0.635" x2="-20.58" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="-20.58" y1="1.905" x2="-19.945" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="-18.675" y1="2.54" x2="-18.04" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="-18.04" y1="1.905" x2="-18.04" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-18.04" y1="0.635" x2="-18.675" y2="0" width="0.2032" layer="21"/>
-<wire x1="-20.58" y1="3.175" x2="-19.945" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="-18.675" y1="2.54" x2="-18.04" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="-18.04" y1="4.445" x2="-18.04" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="-20.58" y1="-4.445" x2="-20.58" y2="-3.175" width="0.2032" layer="21"/>
-<wire x1="-20.58" y1="-3.175" x2="-19.945" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="-18.675" y1="-2.54" x2="-18.04" y2="-3.175" width="0.2032" layer="21"/>
-<wire x1="-19.945" y1="-2.54" x2="-20.58" y2="-1.905" width="0.2032" layer="21"/>
-<wire x1="-20.58" y1="-1.905" x2="-20.58" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-20.58" y1="-0.635" x2="-19.945" y2="0" width="0.2032" layer="21"/>
-<wire x1="-18.675" y1="0" x2="-18.04" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-18.04" y1="-0.635" x2="-18.04" y2="-1.905" width="0.2032" layer="21"/>
-<wire x1="-18.04" y1="-1.905" x2="-18.675" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="-19.945" y1="-5.08" x2="-18.675" y2="-5.08" width="0.2032" layer="21"/>
-<wire x1="-20.58" y1="-4.445" x2="-19.945" y2="-5.08" width="0.2032" layer="21"/>
-<wire x1="-18.675" y1="-5.08" x2="-18.04" y2="-4.445" width="0.2032" layer="21"/>
-<wire x1="-18.04" y1="-3.175" x2="-18.04" y2="-4.445" width="0.2032" layer="21"/>
-<wire x1="-19.945" y1="5.08" x2="-18.675" y2="5.08" width="0.2032" layer="21"/>
-<wire x1="-21.5" y1="-6" x2="-21.5" y2="6" width="0.127" layer="51"/>
-<wire x1="-21.5" y1="6" x2="16.5" y2="6" width="0.127" layer="51"/>
-<wire x1="16.5" y1="6" x2="16.5" y2="-6" width="0.127" layer="51"/>
-<wire x1="16.5" y1="-6" x2="-21.5" y2="-6" width="0.127" layer="51"/>
-<pad name="GND" x="-19.31" y="-3.81" drill="1.016" diameter="1.8796" shape="square" rot="R180"/>
-<pad name="VCC" x="-19.31" y="-1.27" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="SCL" x="-19.31" y="1.27" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="SDA" x="-19.31" y="3.81" drill="1.016" diameter="1.8796" rot="R180"/>
-<text x="-17.2962" y="-7.3612" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-17.22" y="6.675" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-19.564" y1="3.556" x2="-19.056" y2="4.064" layer="51" rot="R90"/>
-<rectangle x1="-19.564" y1="1.016" x2="-19.056" y2="1.524" layer="51" rot="R90"/>
-<rectangle x1="-19.564" y1="-1.524" x2="-19.056" y2="-1.016" layer="51" rot="R90"/>
-<rectangle x1="-19.564" y1="-4.064" x2="-19.056" y2="-3.556" layer="51" rot="R90"/>
-<rectangle x1="-17" y1="-5" x2="16" y2="5" layer="51"/>
-</package>
 <package name="OLED-128X64-1.3-HO" urn="urn:adsk.eagle:footprint:12058300/1" library_version="1" library_locally_modified="yes">
 <description>OLED module 1.3", header only</description>
 <wire x1="3.175" y1="16.02" x2="4.445" y2="16.02" width="0.2032" layer="21"/>
@@ -2036,18 +1992,156 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <circle x="15.2" y="-14.25" radius="1.5" width="0.2" layer="51"/>
 <circle x="-15.2" y="-14.25" radius="1.5" width="0.2" layer="51"/>
 </package>
+<package name="OLED-128X32-0.91" urn="urn:adsk.eagle:footprint:11973683/2" library_version="14">
+<description>128x32 I2C OLED 0.91"</description>
+<wire x1="-19.58" y1="3.175" x2="-19.58" y2="4.445" width="0.2032" layer="21"/>
+<wire x1="-19.58" y1="4.445" x2="-18.945" y2="5.08" width="0.2032" layer="21"/>
+<wire x1="-17.675" y1="5.08" x2="-17.04" y2="4.445" width="0.2032" layer="21"/>
+<wire x1="-18.945" y1="0" x2="-19.58" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-19.58" y1="0.635" x2="-19.58" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="-19.58" y1="1.905" x2="-18.945" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="-17.675" y1="2.54" x2="-17.04" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="-17.04" y1="1.905" x2="-17.04" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-17.04" y1="0.635" x2="-17.675" y2="0" width="0.2032" layer="21"/>
+<wire x1="-19.58" y1="3.175" x2="-18.945" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="-17.675" y1="2.54" x2="-17.04" y2="3.175" width="0.2032" layer="21"/>
+<wire x1="-17.04" y1="4.445" x2="-17.04" y2="3.175" width="0.2032" layer="21"/>
+<wire x1="-19.58" y1="-4.445" x2="-19.58" y2="-3.175" width="0.2032" layer="21"/>
+<wire x1="-19.58" y1="-3.175" x2="-18.945" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-17.675" y1="-2.54" x2="-17.04" y2="-3.175" width="0.2032" layer="21"/>
+<wire x1="-18.945" y1="-2.54" x2="-19.58" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="-19.58" y1="-1.905" x2="-19.58" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-19.58" y1="-0.635" x2="-18.945" y2="0" width="0.2032" layer="21"/>
+<wire x1="-17.675" y1="0" x2="-17.04" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-17.04" y1="-0.635" x2="-17.04" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="-17.04" y1="-1.905" x2="-17.675" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-18.945" y1="-5.08" x2="-17.675" y2="-5.08" width="0.2032" layer="21"/>
+<wire x1="-19.58" y1="-4.445" x2="-18.945" y2="-5.08" width="0.2032" layer="21"/>
+<wire x1="-17.675" y1="-5.08" x2="-17.04" y2="-4.445" width="0.2032" layer="21"/>
+<wire x1="-17.04" y1="-3.175" x2="-17.04" y2="-4.445" width="0.2032" layer="21"/>
+<wire x1="-18.945" y1="5.08" x2="-17.675" y2="5.08" width="0.2032" layer="21"/>
+<wire x1="-20.5" y1="-6" x2="-20.5" y2="6" width="0.127" layer="51"/>
+<wire x1="-20.5" y1="6" x2="17.5" y2="6" width="0.127" layer="51"/>
+<wire x1="17.5" y1="6" x2="17.5" y2="-6" width="0.127" layer="51"/>
+<wire x1="17.5" y1="-6" x2="-20.5" y2="-6" width="0.127" layer="51"/>
+<pad name="GND" x="-18.31" y="-3.81" drill="1.016" diameter="1.8796" shape="square" rot="R180"/>
+<pad name="VCC" x="-18.31" y="-1.27" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="SCL" x="-18.31" y="1.27" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="SDA" x="-18.31" y="3.81" drill="1.016" diameter="1.8796" rot="R180"/>
+<text x="-16.2962" y="-7.3612" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-17.22" y="6.675" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-18.564" y1="3.556" x2="-18.056" y2="4.064" layer="51" rot="R90"/>
+<rectangle x1="-18.564" y1="1.016" x2="-18.056" y2="1.524" layer="51" rot="R90"/>
+<rectangle x1="-18.564" y1="-1.524" x2="-18.056" y2="-1.016" layer="51" rot="R90"/>
+<rectangle x1="-18.564" y1="-4.064" x2="-18.056" y2="-3.556" layer="51" rot="R90"/>
+<rectangle x1="-16" y1="-5" x2="17" y2="5" layer="51"/>
+</package>
+<package name="OLED-128X32-0.91-HEADER" urn="urn:adsk.eagle:footprint:15708158/1" library_version="14">
+<description>128x32 I2C OLED 0.91"</description>
+<wire x1="-19.58" y1="3.175" x2="-19.58" y2="4.445" width="0.2032" layer="21"/>
+<wire x1="-19.58" y1="4.445" x2="-18.945" y2="5.08" width="0.2032" layer="21"/>
+<wire x1="-17.675" y1="5.08" x2="-17.04" y2="4.445" width="0.2032" layer="21"/>
+<wire x1="-18.945" y1="0" x2="-19.58" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-19.58" y1="0.635" x2="-19.58" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="-19.58" y1="1.905" x2="-18.945" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="-17.675" y1="2.54" x2="-17.04" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="-17.04" y1="1.905" x2="-17.04" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-17.04" y1="0.635" x2="-17.675" y2="0" width="0.2032" layer="21"/>
+<wire x1="-19.58" y1="3.175" x2="-18.945" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="-17.675" y1="2.54" x2="-17.04" y2="3.175" width="0.2032" layer="21"/>
+<wire x1="-17.04" y1="4.445" x2="-17.04" y2="3.175" width="0.2032" layer="21"/>
+<wire x1="-19.58" y1="-4.445" x2="-19.58" y2="-3.175" width="0.2032" layer="21"/>
+<wire x1="-19.58" y1="-3.175" x2="-18.945" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-17.675" y1="-2.54" x2="-17.04" y2="-3.175" width="0.2032" layer="21"/>
+<wire x1="-18.945" y1="-2.54" x2="-19.58" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="-19.58" y1="-1.905" x2="-19.58" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-19.58" y1="-0.635" x2="-18.945" y2="0" width="0.2032" layer="21"/>
+<wire x1="-17.675" y1="0" x2="-17.04" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-17.04" y1="-0.635" x2="-17.04" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="-17.04" y1="-1.905" x2="-17.675" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-18.945" y1="-5.08" x2="-17.675" y2="-5.08" width="0.2032" layer="21"/>
+<wire x1="-19.58" y1="-4.445" x2="-18.945" y2="-5.08" width="0.2032" layer="21"/>
+<wire x1="-17.675" y1="-5.08" x2="-17.04" y2="-4.445" width="0.2032" layer="21"/>
+<wire x1="-17.04" y1="-3.175" x2="-17.04" y2="-4.445" width="0.2032" layer="21"/>
+<wire x1="-18.945" y1="5.08" x2="-17.675" y2="5.08" width="0.2032" layer="21"/>
+<wire x1="-20.5" y1="-6" x2="-20.5" y2="6" width="0.127" layer="51"/>
+<wire x1="-20.5" y1="6" x2="17.5" y2="6" width="0.127" layer="51"/>
+<wire x1="17.5" y1="6" x2="17.5" y2="-6" width="0.127" layer="51"/>
+<wire x1="17.5" y1="-6" x2="-20.5" y2="-6" width="0.127" layer="51"/>
+<pad name="GND" x="-18.31" y="-3.81" drill="1.016" diameter="1.8796" shape="square" rot="R180"/>
+<pad name="VCC" x="-18.31" y="-1.27" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="SCL" x="-18.31" y="1.27" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="SDA" x="-18.31" y="3.81" drill="1.016" diameter="1.8796" rot="R180"/>
+<text x="-16.2962" y="-7.3612" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-17.22" y="6.675" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-18.564" y1="3.556" x2="-18.056" y2="4.064" layer="51" rot="R90"/>
+<rectangle x1="-18.564" y1="1.016" x2="-18.056" y2="1.524" layer="51" rot="R90"/>
+<rectangle x1="-18.564" y1="-1.524" x2="-18.056" y2="-1.016" layer="51" rot="R90"/>
+<rectangle x1="-18.564" y1="-4.064" x2="-18.056" y2="-3.556" layer="51" rot="R90"/>
+<rectangle x1="-16" y1="-5" x2="17" y2="5" layer="51"/>
+</package>
+<package name="OLED-128X64-1.3-5.08" urn="urn:adsk.eagle:footprint:16152187/1" library_version="17">
+<description>OLED module 1.3"</description>
+<wire x1="3.175" y1="16.02" x2="4.445" y2="16.02" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="16.02" x2="5.08" y2="15.385" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="14.115" x2="4.445" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="0" y1="15.385" x2="0.635" y2="16.02" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="16.02" x2="1.905" y2="16.02" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="16.02" x2="2.54" y2="15.385" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="14.115" x2="1.905" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="13.48" x2="0.635" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="13.48" x2="0" y2="14.115" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="16.02" x2="2.54" y2="15.385" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="14.115" x2="3.175" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="13.48" x2="3.175" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="-4.445" y1="16.02" x2="-3.175" y2="16.02" width="0.2032" layer="21"/>
+<wire x1="-3.175" y1="16.02" x2="-2.54" y2="15.385" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="14.115" x2="-3.175" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="15.385" x2="-1.905" y2="16.02" width="0.2032" layer="21"/>
+<wire x1="-1.905" y1="16.02" x2="-0.635" y2="16.02" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="16.02" x2="0" y2="15.385" width="0.2032" layer="21"/>
+<wire x1="0" y1="14.115" x2="-0.635" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="13.48" x2="-1.905" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="-1.905" y1="13.48" x2="-2.54" y2="14.115" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="15.385" x2="-5.08" y2="14.115" width="0.2032" layer="21"/>
+<wire x1="-4.445" y1="16.02" x2="-5.08" y2="15.385" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="14.115" x2="-4.445" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="-3.175" y1="13.48" x2="-4.445" y2="13.48" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="15.385" x2="5.08" y2="14.115" width="0.2032" layer="21"/>
+<wire x1="-17.7" y1="16.75" x2="17.7" y2="16.75" width="0.127" layer="51"/>
+<wire x1="17.7" y1="16.75" x2="17.7" y2="-16.75" width="0.127" layer="51"/>
+<wire x1="17.7" y1="-16.75" x2="8" y2="-16.75" width="0.127" layer="51"/>
+<wire x1="8" y1="-16.75" x2="-8" y2="-16.75" width="0.127" layer="51"/>
+<wire x1="-8" y1="-16.75" x2="-17.7" y2="-16.75" width="0.127" layer="51"/>
+<wire x1="-17.7" y1="-16.75" x2="-17.7" y2="16.75" width="0.127" layer="51"/>
+<wire x1="-8" y1="-16.75" x2="-8" y2="-12" width="0.127" layer="51"/>
+<wire x1="-8" y1="-12" x2="-5" y2="-13" width="0.127" layer="51"/>
+<wire x1="-5" y1="-13" x2="5" y2="-13" width="0.127" layer="51"/>
+<wire x1="8" y1="-16.75" x2="8" y2="-12" width="0.127" layer="51"/>
+<wire x1="8" y1="-12" x2="5" y2="-13" width="0.127" layer="51"/>
+<wire x1="-8" y1="-12" x2="8" y2="-12" width="0.127" layer="51"/>
+<pad name="VCC" x="-3.81" y="14.75" drill="1.016" diameter="1.8796" shape="square" rot="R90"/>
+<pad name="GND" x="-1.27" y="14.75" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="SCL" x="1.27" y="14.75" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="SDA" x="3.81" y="14.75" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-9.2962" y="11.1788" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="2.78" y="11.215" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="3.556" y1="14.496" x2="4.064" y2="15.004" layer="51"/>
+<rectangle x1="1.016" y1="14.496" x2="1.524" y2="15.004" layer="51"/>
+<rectangle x1="-1.524" y1="14.496" x2="-1.016" y2="15.004" layer="51"/>
+<rectangle x1="-4.064" y1="14.496" x2="-3.556" y2="15.004" layer="51"/>
+<rectangle x1="-15.2" y1="-5.6" x2="15.2" y2="9.4" layer="51"/>
+<circle x="-15.2" y="14.25" radius="1.5" width="0.2" layer="51"/>
+<circle x="15.2" y="14.25" radius="1.5" width="0.2" layer="51"/>
+<circle x="15.2" y="-14.25" radius="1.5" width="0.2" layer="51"/>
+<circle x="-15.2" y="-14.25" radius="1.5" width="0.2" layer="51"/>
+</package>
 </packages>
 <packages3d>
-<package3d name="OLED-128X64-1.3" urn="urn:adsk.eagle:package:11966793/2" type="model" library_version="5">
+<package3d name="OLED-128X64-1.3" urn="urn:adsk.eagle:package:11966793/3" type="model" library_version="17">
 <description>OLED module 1.3"</description>
 <packageinstances>
 <packageinstance name="OLED-128X64-1.3"/>
-</packageinstances>
-</package3d>
-<package3d name="OLED-128X32-0.91" urn="urn:adsk.eagle:package:11973684/2" type="model" library_version="5">
-<description>128x32 I2C OLED 0.91"</description>
-<packageinstances>
-<packageinstance name="OLED-128X32-0.91"/>
 </packageinstances>
 </package3d>
 <package3d name="HDRVR4W64P254_1X4_1016X254X860C" urn="urn:adsk.eagle:package:12058301/2" type="model" library_version="7" library_locally_modified="yes">
@@ -2060,6 +2154,24 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <package3d name="OLED-128X64-0.96" urn="urn:adsk.eagle:package:11966782/2" type="model" library_version="9">
 <packageinstances>
 <packageinstance name="OLED-128X64-0.96"/>
+</packageinstances>
+</package3d>
+<package3d name="OLED-128X32-0.91" urn="urn:adsk.eagle:package:11973684/4" type="model" library_version="14">
+<description>128x32 I2C OLED 0.91"</description>
+<packageinstances>
+<packageinstance name="OLED-128X32-0.91"/>
+</packageinstances>
+</package3d>
+<package3d name="OLED-128X32-0.91-HEADER" urn="urn:adsk.eagle:package:15708159/2" type="model" library_version="14">
+<description>128x32 I2C OLED 0.91"</description>
+<packageinstances>
+<packageinstance name="OLED-128X32-0.91-HEADER"/>
+</packageinstances>
+</package3d>
+<package3d name="OLED-128X64-1.3-5.08" urn="urn:adsk.eagle:package:16152188/2" type="model" library_version="17">
+<description>OLED module 1.3"</description>
+<packageinstances>
+<packageinstance name="OLED-128X64-1.3-5.08"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2078,7 +2190,7 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="OLED-I2C" urn="urn:adsk.eagle:component:11966783/7" prefix="MOD" library_version="1" library_locally_modified="yes">
+<deviceset name="OLED-I2C" urn="urn:adsk.eagle:component:11966783/14" prefix="MOD" library_version="1" library_locally_modified="yes">
 <description>OLED module with SSD1306 I2C driver</description>
 <gates>
 <gate name="G$1" symbol="OLED-I2C" x="0" y="0"/>
@@ -2106,7 +2218,7 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:11966793/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11966793/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2120,7 +2232,7 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:11973684/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11973684/4"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2135,6 +2247,34 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:12058301/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="128X32-0.91-HEADER" package="OLED-128X32-0.91-HEADER">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15708159/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="128X64-1.3-5.08" package="OLED-128X64-1.3-5.08">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16152188/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2765,7 +2905,7 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <part name="SJ2" library="SuperHouse-Jumpers" library_urn="urn:adsk.eagle:library:12190622" deviceset="SJC" device="-NORMAL" package3d_urn="urn:adsk.eagle:package:7066342/1" value="SND"/>
 <part name="R13" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="10K"/>
 <part name="U$16" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="5V" device=""/>
-<part name="MOD2" library="SuperHouse-Displays" library_urn="urn:adsk.eagle:library:11966779" deviceset="OLED-I2C" device="128X64-1.3-HO" package3d_urn="urn:adsk.eagle:package:12058301/2" value="OLED-I2C128X64-1.3-HO"/>
+<part name="MOD2" library="SuperHouse-Displays" library_urn="urn:adsk.eagle:library:11966779" deviceset="OLED-I2C" device="128X64-1.3-5.08" package3d_urn="urn:adsk.eagle:package:16152188/2" value="OLED-I2C128X64-1.3-5.08"/>
 <part name="IC1" library="SuperHouse-MCUs" library_urn="urn:adsk.eagle:library:11815114" deviceset="ATMEGA32U4NT" device="-TQFP" package3d_urn="urn:adsk.eagle:package:12190647/3"/>
 </parts>
 <sheets>
