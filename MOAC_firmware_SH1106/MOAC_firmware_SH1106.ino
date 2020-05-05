@@ -1,140 +1,151 @@
-/*
- http://www.arduino.cc/en/Tutorial/KeyboardMessage
+/**
+  Mini Open Adaptive Controller firmware.
 
- LeoStick pins:
- A0  Button 0
- A1  Button 1
- A2  Button 2
- A3  Button 3
- A4  Button 4
- A5  Button 5
- A6  Button 6
- A7  Button 7
- D2  SDA (I2C) for OLED
- D3  SCL (I2C) for OLED
- D11 Piezo
- D13 LED Red
- */
+  Read digital inputs and send keyboard, mouse, joystick, or game controller
+  events to a host computer via USB. This allows custom input devices to be
+  created using buttons or other specialised input devices.
 
-#include <SPI.h>
-#include <Wire.h>
-#include <Adafruit_GFX.h>
-#include <Adafruit_SH1106.h>
+  Includes a driver for a 1.3" 128x64 pixel monochrome OLED display with
+  I2C interface, so that input events can be displayed on screen.
 
-#include <Fonts/FreeSans24pt7b.h>
+  This firmware is for the SuperHouse Mini Open Adaptive Controller, but also
+  works just as well on an Arduino Leonardo so you can build your own
+  hardware to suit your own needs.
 
-#define OLED_RESET 0  // Is this connected?
+  External dependencies. Install using the Arduino library manager:
+     "Adafruit GFX Library" by Adafruit
+     "Keypad" by Mark Stanley, Alexander Brevig
+
+  Bundled dependencies. No need to install separately:
+     "Adafruit SH1106" by wonho-maker, forked from Adafruit SSD1306 library
+
+  To do:
+   - Joystick, mouse, and game controller events
+   - Configurable auto repeat
+
+  Written by Jonathan Oxer for www.superhouse.tv
+    https://github.com/superhouse/MOAC
+
+  Copyright 2020 SuperHouse Automation Pty Ltd www.superhouse.tv
+*/
+#define VERSION "2.0"
+/*--------------------------- Configuration ------------------------------*/
+// Configuration should be done in the included file:
+#include "config.h"
+
+/*--------------------------- Libraries ----------------------------------*/
+#include <SPI.h>                      // For OLED
+#include <Wire.h>                     // For OLED?
+#include <Adafruit_GFX.h>             // For OLED
+#include "Adafruit_SH1106.h"          // For OLED
+#include <Keypad.h>                   // To read button inputs
+#include "Keyboard.h"                 // Software USB keyboard library to emulate a keyboard
+
+/*--------------------------- Global Variables ---------------------------*/
+uint16_t g_last_activity_time = 0;    // Milliseconds
+
+/*--------------------------- Resources ----------------------------------*/
+#include <Fonts/FreeSans24pt7b.h>     // For OLED
+
+/*--------------------------- Function Signatures ------------------------*/
+void showStartupScreen();
+void scanInputs();
+void screensaver();
+void showEvent(uint8_t button_index);
+
+/*--------------------------- Instantiate Global Objects -----------------*/
 Adafruit_SH1106 display(OLED_RESET);
 
-// Keypad scanning library to detect keypresses:
-#include <Keypad.h>
-
-// Software USB keyboard library to emulate a keyboard:
-#include "Keyboard.h"
-
-
-// Input setup
-//byte inputPins[8] = {A0,A1,A2,A3,A4,A5,6,11};
-byte inputPins[8] = {A0,A1,A2,A3,A4,A5,A6,A7};
-// MISTAKE HERE! I connected to A11 (D6) but it's the wrong pin. Should be A7.
-
-
-/* Macros to send
-     info     show       group     move
-     delete   change     add       replace
-     name     value      line      text
-     net      label      route     ripup    
-     layer 1   layer 16  ratsnest  ripup @;
-*/
-char *macro_messages[] = {
-  "a\n",/*info*/    "b\n",/*show*/     "c\n",/*group*/    "d\n",/*move*/
-  "e\n",/*delete*/  "f\n",/*change*/   "g\n",/*add*/      "h\n"/*replace*/
-};
-
-uint16_t last_activity_time = 0;  // Milliseconds
-uint8_t  display_timeout    = 3;  // Seconds
-
+/*--------------------------- Program ------------------------------------*/
 /**
- * Setup
- */
-void setup() {
-  display.begin(SH1106_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3C (for the 128x32)
-  show_startup_screen();
-  
-  // initialize control over the keyboard:
+  Setup
+*/
+void setup()
+{
+  display.begin(SH1106_SWITCHCAPVCC, 0x3C);  // Initialize with the I2C address 0x3C
+  showStartupScreen();
+
+  // initialize the virtual USB keyboard:
   Keyboard.begin();
 
-  Serial.begin(115200);
+#if ENABLE_BEEP
+  //pinMode(PIEZO_PIN, OUTPUT);
+  tone(PIEZO_PIN, 1000, 500);
+#endif
 }
 
 /**
- * Displayed at startup
- */
-void show_startup_screen()
+  General info screen displayed at startup
+*/
+void showStartupScreen()
 {
   display.clearDisplay();
   display.setTextSize(1);
   display.setTextColor(WHITE);
-  display.setCursor(0,0);
-  display.println("Mini Open");
+  display.setCursor(0, 5);
+  display.println("      Mini Open");
   display.setTextSize(1);
-  display.setCursor(0,10);
-  display.println("Adaptive Controller");
-  display.setCursor(0,20);
-  display.println("v1.0");
+  display.setCursor(0, 15);
+  display.println(" Adaptive Controller");
+  display.setCursor(50, 25);
+  display.print("v");
+  display.print(VERSION);
+  display.setCursor(10, 40);
+  display.println("superhouse.tv/moac");
   display.display();
 }
 
 /**
- * Loop
- */
-void loop() {
-  //byte key = keypad.getKey();
-  scan_inputs();
-  /*
-  if (key){
-    //Serial.println(key);
-    //Serial.println(macro_messages[key]);
-    Keyboard.print(macro_messages[key]);
-    last_activity_time = millis();
-    show_display();
-  }
-  */
-
-  if((millis() - last_activity_time) > (1000 * display_timeout))
-  {
-    //display.dim(0);
-    display.clearDisplay();
-    display.display();
-  }
+  Loop
+*/
+void loop()
+{
+  scanInputs();
+  screensaver();
 }
 
 /**
- * Read each of the inputs to check for button presses
- */
-void scan_inputs()
+  Read each of the inputs to check for button presses
+*/
+void scanInputs()
 {
-  for (byte i = 0; i < sizeof(inputPins); i++){
-    if(analogRead(inputPins[i]) < 127)
+  for (uint8_t i = 0; i < sizeof(g_input_pin_list); i++) {
+    //if (analogRead(g_input_pin_list[i]) < 127) // Using analogRead while experimenting
+    if (LOW == digitalRead(g_input_pin_list[i]))
     {
-      Keyboard.print(macro_messages[i]);
-      last_activity_time = millis();
-      show_event(i);
+      Keyboard.print(g_macro_messages[i]);
+#if ENABLE_BEEP
+      tone(PIEZO_PIN, 1000, 100);
+#endif
+      g_last_activity_time = millis();
+      showEvent(i);
       delay(100);
     }
   }
 }
 
 /**
- * Displayed at startup
- */
-void show_event(int key)
+  Blank the screen if the timeout period has been reached
+*/
+void screensaver()
+{
+  if ((millis() - g_last_activity_time) > (1000 * DISPLAY_TIMEOUT))
+  {
+    display.clearDisplay();
+    display.display();
+  }
+}
+
+/**
+  Display the event on the screen
+*/
+void showEvent(uint8_t button_index)
 {
   display.setFont(&FreeSans24pt7b);
   display.clearDisplay();
   display.setTextSize(1.5);
   display.setTextColor(WHITE);
-  display.setCursor(50,40);
-  display.print(macro_messages[key]);
+  display.setCursor(50, 40);
+  display.print(g_macro_messages[button_index]);
   display.display();
 }
