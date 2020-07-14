@@ -12,6 +12,9 @@
   works just as well on an Arduino Leonardo so you can build your own
   hardware to suit your own needs.
 
+  Compile options:
+    * Tools -> Board -> Arduino AVR Boards -> Arduino Leonardo
+
   External dependencies. Install using the Arduino library manager:
      "Adafruit GFX Library" by Adafruit
      "Keypad" by Mark Stanley, Alexander Brevig
@@ -19,27 +22,29 @@
   Bundled dependencies. No need to install separately:
      "Adafruit SH1106" by wonho-maker, forked from Adafruit SSD1306 library
 
+  More information:
+    www.superhouse.tv/moac
+
   To do:
-   - Joystick, mouse, and game controller events
-   - Configurable auto repeat
+    * Joystick, mouse, and game controller events
+    * Configurable auto repeat
 
   Written by Jonathan Oxer for www.superhouse.tv
     https://github.com/superhouse/MOAC
 
   Copyright 2020 SuperHouse Automation Pty Ltd www.superhouse.tv
 */
-#define VERSION "2.0"
+#define VERSION "2.1"
 /*--------------------------- Configuration ------------------------------*/
 // Configuration should be done in the included file:
 #include "config.h"
 
 /*--------------------------- Libraries ----------------------------------*/
 #include <SPI.h>                      // For OLED
-#include <Wire.h>                     // For OLED?
 #include <Adafruit_GFX.h>             // For OLED
 #include "Adafruit_SH1106.h"          // For OLED
 #include <Keypad.h>                   // To read button inputs
-#include "Keyboard.h"                 // Software USB keyboard library to emulate a keyboard
+#include "Keyboard.h"                 // Emulate a USB keyboard
 
 /*--------------------------- Global Variables ---------------------------*/
 uint16_t g_last_activity_time = 0;    // Milliseconds
@@ -69,8 +74,8 @@ void setup()
   Keyboard.begin();
 
 #if ENABLE_BEEP
-  //pinMode(PIEZO_PIN, OUTPUT);
-  tone(PIEZO_PIN, 1000, 500);
+  pinMode(PIEZO_PIN, OUTPUT);
+  tone(PIEZO_PIN, BEEP_TONE, BEEP_DURATION);
 #endif
 }
 
@@ -115,7 +120,7 @@ void scanInputs()
     {
       Keyboard.print(g_macro_messages[i]);
 #if ENABLE_BEEP
-      tone(PIEZO_PIN, 1000, 100);
+      tone(PIEZO_PIN, BEEP_TONE, BEEP_DURATION);
 #endif
       g_last_activity_time = millis();
       showEvent(i);
@@ -129,7 +134,7 @@ void scanInputs()
 */
 void screensaver()
 {
-  if ((millis() - g_last_activity_time) > (1000 * DISPLAY_TIMEOUT))
+  if (millis() > (g_last_activity_time + (1000 * DISPLAY_TIMEOUT)))
   {
     display.clearDisplay();
     display.display();
