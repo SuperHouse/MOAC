@@ -7,6 +7,8 @@ to be connected using 3.5mm mono plugs, and then emulate a USB
 keyboard, mouse, joystick, or game controller to send HID events
 to a computer or game console.
 
+![Mini Open Adaptive Controller](Images/MOAC-v1_1-oblique.jpg)
+
 Based on the ATmega32u4 microcontroller, compatible with the Arduino
 Leonardo.
 
