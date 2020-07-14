@@ -16,11 +16,11 @@
     * Tools -> Board -> Arduino AVR Boards -> Arduino Leonardo
 
   External dependencies. Install using the Arduino library manager:
-     "Adafruit GFX Library" by Adafruit
-     "Keypad" by Mark Stanley, Alexander Brevig
+    * "Adafruit GFX Library" by Adafruit
+    * "Keypad" by Mark Stanley, Alexander Brevig
 
   Bundled dependencies. No need to install separately:
-     "Adafruit SH1106" by wonho-maker, forked from Adafruit SSD1306 library
+    * "Adafruit SH1106" by wonho-maker, forked from Adafruit SSD1306 library
 
   More information:
     www.superhouse.tv/moac
