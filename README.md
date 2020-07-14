@@ -6,20 +6,26 @@ to be connected using 3.5mm mono plugs, and then emulate a USB
 keyboard, mouse, joystick, or game controller to send HID events
 to a computer or game console.
 
-![Mini Open Adaptive Controller](Images/MOAC-v1_1-oblique.jpg)
+This allows custom-made assistive-technology input devices to be
+connected to a computer or game console. Functionally this is very
+similar to the Microsoft Xbox Adaptive Controller, but with fewer
+inputs, a fully open-source design, a display, more device emulation
+options.
 
 Based on the ATmega32u4 microcontroller, compatible with the Arduino
 Leonardo.
 
+![Mini Open Adaptive Controller](Images/MOAC-v1_1-oblique.jpg)
+
 Features:
 
- * ATmega 32u4 MCU
+ * ATmega 32u4 MCU (Arduino compatible)
  * 8 switch inputs (active low: short to activate)
- * HWB (hardware boot) button and solder jumper to allow disabling bootloader
  * 128x64 OLED module (SH1106)
  * USB-C connector
  * Piezo beeper
  * Beep on/off switch
+ * HWB (hardware boot) button and solder jumper to allow disabling bootloader
 
 You can view more details at:
 
