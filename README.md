@@ -7,7 +7,7 @@ to be connected using 3.5mm mono plugs, and then emulate a USB
 keyboard, mouse, joystick, or game controller to send HID events
 to a computer or game console.
 
-Based on the ATmega32u4 controller, compatible with the Arduino
+Based on the ATmega32u4 microcontroller, compatible with the Arduino
 Leonardo.
 
 Features:
@@ -25,28 +25,36 @@ You can view more details at:
   http://www.superhouse.tv/moac
 
 
-INSTALLATION
-------------
-The design is saved as an EAGLE project. EAGLE PCB design software is
-available from www.cadsoftusa.com free for non-commercial use. To use
-this project download it and place the directory containing these files
-into the "eagle" directory on your computer. Then open EAGLE and
-navigate to the project.
+Hardware
+--------
+The "Hardware" directory contains the PCB design as an EAGLE project.
+EAGLE PCB design software is available from Autodesk free for
+non-commercial use.
 
 
-CREDITS
+Firmware
+--------
+The "Firmware" directory contains multiple versios. We have experimented
+with different OLEDs and libraries during development, so this is a
+collection of the different firmware versions.
+
+The most recent hardware uses a 128x64 OLED with the SH1106 driver.
+
+Unfortunately the various SH1106 drivers are a bit strange, and the best
+I've found is the version of Adafruit's SSD1306 library that was forked
+by wonho-maker and modified to add SSD1306 support. That version is not
+available through the Arduino library manager, so it's been embedded
+directly within the project.
+
+
+Credits
 -------
 Jonathan Oxer jon@oxer.com.au
 
 
-DISTRIBUTION
-------------
-The specific terms of distribution of this project are governed by the
-license referenced below.
-
-
-LICENSE
+License
 -------
-Licensed under the TAPR Open Hardware License (www.tapr.org/OHL).
-The "license" folder within this repository also contains a copy of
-this license in plain text format.
+The hardware portion of this project is licensed under the TAPR Open
+Hardware License (www.tapr.org/OHL). The "license" folder within this
+repository also contains a copy of this license in plain text format.
+
