@@ -1,6 +1,5 @@
 Mini Open Adaptive Controller
 ==============================
-Copyright 2018-2020 SuperHouse Automation Pty Ltd  www.superhouse.tv  
 
 Universal input device that allows external switches, buttons, etc
 to be connected using 3.5mm mono plugs, and then emulate a USB
@@ -56,7 +55,12 @@ Jonathan Oxer jon@oxer.com.au
 
 License
 -------
+Copyright 2018-2020 SuperHouse Automation Pty Ltd  www.superhouse.tv  
+
 The hardware portion of this project is licensed under the TAPR Open
 Hardware License (www.tapr.org/OHL). The "license" folder within this
-repository also contains a copy of this license in plain text format.
+repository contains a copy of this license in plain text format.
 
+The software portion of this project is licensed under the Simplified
+BSD License. The "licence" folder within this project contains a
+copy of this license in plain text format.
