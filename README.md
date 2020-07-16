@@ -42,7 +42,7 @@ non-commercial use.
 
 Firmware
 --------
-The "Firmware" directory contains multiple versios. We have experimented
+The "Firmware" directory contains multiple versions. We have experimented
 with different OLEDs and libraries during development, so this is a
 collection of the different firmware versions.
 
