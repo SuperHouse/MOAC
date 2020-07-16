@@ -55,6 +55,17 @@ available through the Arduino library manager, so it's been embedded
 directly within the project.
 
 
+Enclosure
+---------
+The "Enclosure" directory contains STLs for a case that can be
+3D-printed.
+
+The two halves of the case should be printed with the flat face down to
+the printer bed.
+
+The case can be held shut by countersunk self-tapping screws.
+
+
 Credits
 -------
  * Jonathan Oxer <jon@oxer.com.au>
