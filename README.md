@@ -9,7 +9,7 @@ to a computer or game console.
 This allows custom-made assistive-technology input devices to be
 connected to a computer or game console. Functionally this is very
 similar to the Microsoft Xbox Adaptive Controller, but with fewer
-inputs, a fully open-source design, a display, more device emulation
+inputs, a fully open-source design, a display, and more device emulation
 options.
 
 Based on the ATmega32u4 microcontroller, compatible with the Arduino
@@ -19,10 +19,11 @@ Leonardo.
 
 Features:
 
- * ATmega 32u4 MCU (Arduino compatible)
- * 8 switch inputs (active low: short to activate)
+ * 8 switch inputs with 3.5mm mono sockets
+ * USB-C socket for connection to computer, game controller, etc
+ * Customise the software to suit your needs
  * 128x64 OLED module (SH1106)
- * USB-C connector
+ * ATmega 32u4 MCU (Arduino compatible)
  * Piezo beeper
  * Beep on/off switch
  * HWB (hardware boot) button and solder jumper to allow disabling bootloader
@@ -56,7 +57,8 @@ directly within the project.
 
 Credits
 -------
-Jonathan Oxer jon@oxer.com.au
+ * Jonathan Oxer <jon@oxer.com.au>
+ * Chris Fryer <chris.fryer78@gmail.com>
 
 
 License
