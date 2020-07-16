@@ -1,0 +1,66 @@
+Partlist
+
+Exported from MOAC.sch at 16/7/20 12:54 PM
+
+EAGLE Version 9.6.2 Copyright (c) 1988-2020 Autodesk, Inc.
+
+Assembly variant: 
+
+Part     Value                   Device                  Package              Library                 Sheet
+
+C1       100nF                   CAP0603                 C0603                SuperHouse-DiscreteSemi 1
+C2       100nF                   CAP0603                 C0603                SuperHouse-DiscreteSemi 1
+C3       10uF                    CAP0805                 C0805                SuperHouse-DiscreteSemi 1
+C4       1uF                     CAP0603                 C0603                SuperHouse-DiscreteSemi 1
+C5       15pF                    CAP0603                 C0603                SuperHouse-DiscreteSemi 1
+C6       15pF                    CAP0603                 C0603                SuperHouse-DiscreteSemi 1
+F1       500mA PTC 1812          PTC050                  1812                 SuperHouse-Fuses        1
+IC1      ATMEGA32U4NT-TQFP       ATMEGA32U4NT-TQFP       TQFP44               SuperHouse-MCUs         1
+ICSP     ICSP                    ICSPPTH                 2X03PTH              SuperHouse-Connectors   1
+J1       3.5mm                   AUDIO-JACK-PJ321        AUDIO-JACK-PJ321     SuperHouse-Connectors   1
+J2       3.5mm                   AUDIO-JACK-PJ321        AUDIO-JACK-PJ321     SuperHouse-Connectors   1
+J3       3.5mm                   AUDIO-JACK-PJ321        AUDIO-JACK-PJ321     SuperHouse-Connectors   1
+J4       3.5mm                   AUDIO-JACK-PJ321        AUDIO-JACK-PJ321     SuperHouse-Connectors   1
+J5       3.5mm                   AUDIO-JACK-PJ321        AUDIO-JACK-PJ321     SuperHouse-Connectors   1
+J6       3.5mm                   AUDIO-JACK-PJ321        AUDIO-JACK-PJ321     SuperHouse-Connectors   1
+J7       3.5mm                   AUDIO-JACK-PJ321        AUDIO-JACK-PJ321     SuperHouse-Connectors   1
+J8       3.5mm                   AUDIO-JACK-PJ321        AUDIO-JACK-PJ321     SuperHouse-Connectors   1
+J10      USB-C-16P-16P           USB-C-16P-16P           USB-C-16P            SuperHouse-Connectors   1
+LED1     BLUE                    LED0603                 LED-0603             SuperHouse-LEDs         1
+LED2     RED                     LED0603                 LED-0603             SuperHouse-LEDs         1
+LED3     GREEN                   LED0603                 LED-0603             SuperHouse-LEDs         1
+LED4     RED                     LED0603                 LED-0603             SuperHouse-LEDs         1
+MOD2     OLED-I2C128X64-1.3-5.08 OLED-I2C128X64-1.3-5.08 OLED-128X64-1.3-5.08 SuperHouse-Displays     1
+PIEZO    BUZZERSMD12X12          BUZZERSMD12X12          BUZZER-12X12-SMT     SuperHouse-Audio        1
+R1       22R                     RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+R2       10K                     RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+R3       4K7                     RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+R4       1K                      RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+R5       1K                      RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+R6       22R                     RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+R7       5.1K                    RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+R8       1K                      RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+R9       1K                      RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+R10      1K                      RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+R11      1K                      RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+R12      1K                      RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+R13      10K                     RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+R14      10K                     RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+R15      10K                     RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+R16      10K                     RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+R17      1K                      RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+R18      5.1K                    RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+R19      1K                      RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+R20      1K                      RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+R21      1K                      RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+R22      10K                     RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+R23      10K                     RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+R24      10K                     RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+R25      10K                     RESISTOR0603            R0603                SuperHouse-DiscreteSemi 1
+S9       RESET                   TAC_SWITCH_2PINSMT      TACTILE_SMD_3X4X2    SuperHouse-Switches     1
+S10      HWB                     TAC_SWITCH_2PINSMT      TACTILE_SMD_3X4X2    SuperHouse-Switches     1
+SJ1      HWB                     SJ-NORMAL               SJ                   SuperHouse-Jumpers      1
+SW1      SWITCH-SPDT-4TABSSMT    SWITCH-SPDT-4TABSSMT    MK-12C02             SuperHouse-Switches     1
+XTL1     16MHz                   CRYSTAL-GND3X2          CRYSTAL-SMD-3X2      SuperHouse-Oscillators  1
+Z1       PGB1010603              TVS0603                 TVS0603              SuperHouse-DiscreteSemi 1
+Z2       PGB1010603              TVS0603                 TVS0603              SuperHouse-DiscreteSemi 1
