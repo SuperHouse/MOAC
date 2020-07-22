@@ -3,12 +3,12 @@
 char *g_macro_messages[] = {
   "a",       // 1: letter "a"
   "b\n",     // 2: letter "b" then start a new line
-  "Hello ",  // 3: word "Hello" then a space
+  "Hi ",     // 3: word "Hi" then a space
   "there\n", // 4: word "there" then start a new line
   "5",       // 5: number "5"
   "6",       // 6: number "6"
   "7",       // 7: number "7"
-  "8"        // 8: number "8"
+  "For more info, see: https://www.superhouse.tv/moac \n"  // 8: Print a help message!
 };
 
 /* Audible feedback */
