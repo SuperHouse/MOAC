@@ -7,13 +7,20 @@ char *g_macro_messages[] = {
   "there\n", // 4: word "there" then start a new line
   "5",       // 5: number "5"
   "6",       // 6: number "6"
-  "7",       // 7: number "7"
+  "warp",    // Special "mouse warp" command
   "For more info, see: https://www.superhouse.tv/moac \n"  // 8: Print a help message!
 };
 
+// Mouse warp locations. Any input can be defined as a "warp" button, which
+// will cause the mouse cursor to jump to each of the coordinates in turn.
+// Warp locations are X/Y values, starting at 0,0 in the top left corner of
+// the screen and ending at 1000,1000 in the bottom right corner of the screen.
+// Center of the screen is 500,500.
+uint16_t warp_locations[][2] = { {250,250}, {500,250}, {500,500}, {750,750}, {980,980}, {10,970} };
+
 /* Audible feedback */
 #define ENABLE_BEEP      true            // Can also be controlled by a switch
-#define BEEP_DURATION     100            // Milliseconds
+#define BEEP_DURATION       2            // 100 Milliseconds
 #define BEEP_TONE        2000            // Frequency in Hz
 
 /* OLED display */

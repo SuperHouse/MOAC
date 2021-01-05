@@ -13,28 +13,29 @@
   hardware to suit your own needs.
 
   Compile options:
-    * Tools -> Board -> Arduino AVR Boards -> Arduino Leonardo
+      Tools -> Board -> Arduino AVR Boards -> Arduino Leonardo
 
   External dependencies. Install using the Arduino library manager:
-    * "Adafruit GFX Library" by Adafruit
-    * "Keypad" by Mark Stanley, Alexander Brevig
+      "Adafruit GFX Library" by Adafruit
+      "Keypad" by Mark Stanley, Alexander Brevig
+      "HID-Project" by Nico Hood
 
   Bundled dependencies. No need to install separately:
-    * "Adafruit SH1106" by wonho-maker, forked from Adafruit SSD1306 library
+      "Adafruit SH1106" by wonho-maker, forked from Adafruit SSD1306 library
 
   More information:
     www.superhouse.tv/moac
 
   To do:
-    * Joystick, mouse, and game controller events
-    * Configurable auto repeat
+      Joystick, mouse, and game controller events
+      Configurable auto repeat
 
   Written by Jonathan Oxer for www.superhouse.tv
     https://github.com/superhouse/MOAC
 
-  Copyright 2020 SuperHouse Automation Pty Ltd www.superhouse.tv
+  Copyright 2020-2021 SuperHouse Automation Pty Ltd www.superhouse.tv
 */
-#define VERSION "2.1"
+#define VERSION "3.0"
 /*--------------------------- Configuration ------------------------------*/
 // Configuration should be done in the included file:
 #include "config.h"
@@ -44,10 +45,12 @@
 #include <Adafruit_GFX.h>             // For OLED
 #include "Adafruit_SH1106.h"          // For OLED
 #include <Keypad.h>                   // To read button inputs
-#include "Keyboard.h"                 // Emulate a USB keyboard
+#include "HID-Project.h"              // HID library with absolute mouse positioning
 
 /*--------------------------- Global Variables ---------------------------*/
-uint16_t g_last_activity_time = 0;    // Milliseconds
+uint16_t g_last_activity_time   = 0;  // Milliseconds
+uint8_t  g_warp_location_index  = 0;
+uint8_t  g_warp_location_count  = 0;
 
 /*--------------------------- Resources ----------------------------------*/
 #include <Fonts/FreeSans24pt7b.h>     // For OLED
@@ -70,8 +73,13 @@ void setup()
   display.begin(SH1106_SWITCHCAPVCC, 0x3C);  // Initialize with the I2C address 0x3C
   showStartupScreen();
 
-  // initialize the virtual USB keyboard:
+  g_warp_location_count = (sizeof(warp_locations) / sizeof(warp_locations[0]));
+
+  // Initialise a virtual USB keyboard:
   Keyboard.begin();
+
+  // Initialise a virtual mouse in "absolute position" mode:
+  AbsoluteMouse.begin();
 
 #if ENABLE_BEEP
   pinMode(PIEZO_PIN, OUTPUT);
@@ -118,13 +126,37 @@ void scanInputs()
     //if (analogRead(g_input_pin_list[i]) < 127) // Using analogRead while experimenting
     if (LOW == digitalRead(g_input_pin_list[i]))
     {
-      Keyboard.print(g_macro_messages[i]);
+      if (g_macro_messages[i] == "warp")
+      {
+        // Do mouse stuff
+        // Move the cursor to the top left corner.
+        AbsoluteMouse.moveTo(0, 0);
+        delay(100);  // Test to give mouse location time to settle in host OS and do basic debounce
+
+        // Jump to the target location:
+        int16_t x_target_location = (int)warp_locations[g_warp_location_index][0] * 32.768;
+        int16_t y_target_location = (int)warp_locations[g_warp_location_index][1] * 32.768;
+
+        // Select the next location from the list, ready for next time:
+        g_warp_location_index ++;
+        if (g_warp_location_index >= g_warp_location_count)
+        {
+          g_warp_location_index = 0;
+        }
+
+        AbsoluteMouse.move(x_target_location, y_target_location);
+        showEvent(i);
+        delay(50);
+      } else {
+        // Do keyboard stuff
+        Keyboard.print(g_macro_messages[i]);
 #if ENABLE_BEEP
-      tone(PIEZO_PIN, BEEP_TONE, BEEP_DURATION);
+        tone(PIEZO_PIN, BEEP_TONE, BEEP_DURATION);
 #endif
-      g_last_activity_time = millis();
-      showEvent(i);
-      delay(100);
+        g_last_activity_time = millis();
+        showEvent(i);
+        delay(50);
+      }
     }
   }
 }
